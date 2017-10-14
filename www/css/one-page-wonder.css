@@ -20,7 +20,7 @@ body {
 }
 
 .headline {
-    padding: 120px 0;
+   /* padding: 120px 0;*/
 }
 
 .headline h1 {
@@ -54,6 +54,71 @@ body {
 .featurette-heading {
     font-size: 50px;
 }
+/*Input forma added*/
+.contact-form {
+  text-align: center;
+  margin-top: 51px;
+}
+.contact-form .input-field {
+  line-height: 49px;
+  width: 100%;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0 10px 0 10px;
+  margin-bottom: 24px;
+}
+.contact-form textarea.input-field {
+  max-height: 225px;
+  line-height: 27px;
+  padding-top: 15px;
+}
+.contact-form .standard-button {
+  margin-top: 17px;
+}
+.contact-form ::-webkit-input-placeholder {
+  text-align: center;
+}
+.contact-form :-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+.contact-form ::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+.contact-form :-ms-input-placeholder {
+  text-align: center;
+}
+/*fundi i input formes*/
+/*submit buttoni*/
+.standard-button {
+  padding: 0 40px 0 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  line-height: 50px;
+  border: none;
+  box-shadow: none;
+}
+.red-button {
+  color: #ffffff;
+  background: #fc5f45;
+}
+.red-button:hover,
+.red-button:active,
+.red-button:active:hover,
+.red-button:focus:hover,
+.red-button:focus {
+  background-color: #f34123;
+  color: #ffffff;
+  outline: none;
+}
+/*fundi i submit buttonit*/
+
 
 footer {
     margin: 50px 0;
@@ -145,7 +210,7 @@ footer {
 
 @media(max-width:640px) {
     .headline {
-        padding: 75px 0 25px 0;
+        /*padding: 75px 0 25px 0;*/
     }
 
     .headline h1 {
