@@ -62,7 +62,7 @@ body {
 .contact-form .input-field {
   line-height: 49px;
   width: 100%;
-  border: 1px solid #efefef;
+  border: 1px solid #888;
   border-radius: 4px;
   text-align: center;
   padding: 0 10px 0 10px;
@@ -73,6 +73,7 @@ body {
   line-height: 27px;
   padding-top: 15px;
 }
+
 .contact-form .standard-button {
   margin-top: 17px;
 }
