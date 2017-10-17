@@ -113,36 +113,75 @@
         ****************************************************************** -->
         <form id="contact-form" class="contact-form">
                         <div class="row">
-
-                            <div class="col-lg-6 col-md-6">
-                                <input type="text" id="name" name="name" class="input-field" placeholder="Your Name">
+<!-- class="col-lg-6 col-md-6" -->
+                            <div class="col-md-8 col-lg-8">
+                                <input list="forma" class="input-field" name="" placeholder="Zgjedh"> 
+                                <datalist id="forma" >
+                                    <option value="Do it YourSelf" ></option>
+                                    <option value="Zgjedh prej Galerise"></option>
+                                </datalist>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" id="name" name="name" class="input-field" placeholder="Emri i Femijes">
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" id="name" name="name" class="input-field" placeholder="Emri i Lodres">
                             </div>
 
-                            <div class="col-lg-6 col-md-6">
-                                <input type="email" id="email" name="email" class="input-field" placeholder="Your Email">
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" id="name" name="name" class="input-field" placeholder="Emaili">
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" id="name" name="name" class="input-field" placeholder="Numri i Telefonit">
                             </div>
 
-                            <div class="col-lg-6 col-md-6">
+                            <div class="col-lg-8 col-md-8">
+                                <input type="email" id="email" name="email" class="input-field" placeholder="Adressa">
+                            </div>
+
+                            <div class="col-lg-8 col-md-8">
                                 <input type="text" id="subject" name="subject" class="input-field" placeholder="Subject">
                             </div>
 
-                            <div class="col-lg-6 col-md-6">
+                            <div class="col-lg-8 col-md-8">
                                 <input type="text" id="budget" name="budget" class="input-field" placeholder="Project Budget">
                             </div>
 
-                            <div class="col-lg-6 col-md-6">
-                                <input type="text" id="uploadFoto" name="foto" class="input-field" placeholder="Upload Foton">
+                            <div class="col-md-8 col-lg-8">
+                                <!-- class="input-field" type="" name="testA"> -->
+                                <input list="Kategoria" class="input-field" name="" placeholder="Zgjedh Kategorine"> 
+                                <datalist id="Kategoria" >
+                                    <option value="Perbindesh" ></option>
+                                    <option value="Superhero"></option>
+                                    <option value="Alien"></option>
+                                    <option value="Robot"></option>
+                                    <option value="Kafshe"></option>
+                                    <option value="Objekt"></option>
+                                    <option value="Tjeter"></option>
+                                </datalist>
                             </div>
-                             <div class="col-lg-6 col-md-6">
+
+                            <div class="col-lg-8 col-md-8">
+                                <input required type="text" id="uploadFoto" value="Ngarko Foton" name="foto" class="btn btn-default standard-button red-button col-lg-8 col-md-8 " placeholder="Upload Foton">
+                            </div>
+                            <!-- <div class="col-lg-6 col-md-6">
+                                <input type="file" id="uploadFoto" value="Ngarko Foton" name="foto" class="btn btn-default standard-button red-button" placeholder="Upload Foton">
+                            </div> -->
+                             <!-- <div class="col-lg-6 col-md-6">
                                 <button class="btn btn-default standard-button red-button" >Browse</button>
-                            </div>
-
-
-                            
+                            </div> -->
                             <div class="col-lg-12">
-                                <textarea name="message" id="message" class="input-field" rows="8" placeholder="Your Message"></textarea>
+                                <textarea name="message" id="message" class="input-field" rows="8" placeholder="Tregimi per lodren"></textarea>
                             </div>
-                             <div class="col-lg-12">
+                            <div class="col-md-8 col-lg-8">
+                                <input list="Dimensionet" class="input-field" name="" placeholder="Zgjedh Dimensionet">
+                                <datalist id="Dimensionet">
+                                    <option value="5cm"></option>
+                                    <option value="10cm"></option>
+                                    <option value="15cm"></option>
+                                </datalist>
+                            </div>
+                            <div class="col-lg-12">
                             <button onclick="window.open('mailto:test@example.com?subject=subject&body=body');" class="btn btn-default standard-button red-button">Dergo Porosine</button>
                             </div>
                         </div>
