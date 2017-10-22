@@ -46,6 +46,7 @@
             document.getElementById('InputForma6').style.display='none';
             document.getElementById('InputForma7').style.display='none';
             document.getElementById('InputformaGaleri').style.display='inline';
+            // $('#InputForma1').slideUp();
 
            }
            else
@@ -128,8 +129,8 @@
             <!-- First Featurette -->
             <div class="featurette" >
                 <img class="featurette-image img-circle img-responsive pull-right" src="alieni.png" style="margin-top: 50px;">
-                <h2 class="featurette-heading">Rreth Nesh
-                    <span class="text-muted">"Lodra juaj ashtu si e keni vizatuar"</span>
+                <h2 class="featurette-heading"><!-- Rreth Nesh -->
+                    <span class="text-muted">Lodra juaj ashtu si e keni vizatuar</span>
                 </h2>
                 <p class="lead"Kiku është një start-up që mirret me prodhimin e lodrave me anë të teknologjisë 3D bazuar në vizatime.<br> Letra gjithmonë humbet në shtëpi prandaj vizatimin e fëmijëve tuaj apo të fëmijërisë suaj silleni tek ne dhe ne ju kthejmë ato ne 3D.<br> A ka diçka më të mirë se sa fëmija të kalojë kohën duke luajtur me lodrën të cilën e ka vizatuar vet?<br> Sjell imagjinatën dhe kreativitetin tek ne, ne sjellim realitetin tek ju!<!-- Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. --></p>
             </div>
@@ -159,7 +160,7 @@
                 <div class="row">
 
                     <div class="col-sm-12 col-md-12 col-lg-12" >
-                    <video width="80%" height="30%" muted="" loop preload="autoplay" src="Kiku-Bejevet.mp4" controls="">
+                    <video width="80%" height="30%" muted="" autoplay="" loop preload="autoplay" src="Kiku-Bejevet.mp4" controls="">
                       
                     </video>
                     </div>
@@ -204,7 +205,7 @@
                 <div class="row">
                 <!-- Mali test insert videon DIV -->
                 <div class="col-sm-12 col-md-12 col-lg-12" >
-                    <video width="80%" height="30%" muted="" loop preload="autoplay" src="Kiku-Bejevet.mp4" controls="yourControls">
+                    <video width="80%" height="30%" muted="" autoplay="" loop preload="autoplay" src="Gjysem te gatshme.mp4" controls="yourControls">
                       
                     </video>
                 </div>
@@ -275,11 +276,15 @@
                         <div class="row">
 <!-- class="col-lg-6 col-md-6" -->
                             <div id="InputFormaZgjedh" class="col-md-8 col-lg-8">
-                                <input id="FormA" list="forma" class="input-field " name="" placeholder="Zgjedh" onchange="Inputforma()"> 
+                                <input id="FormA" list="forma" class="input-field " name="" placeholder="Zgjedh" oninput="Inputforma()"> 
                                 <datalist id="forma" >
-                                    <option value="Bëje vet" ></option>
+                                    <option value="Bëje vet"></option>
                                     <option value="Gjysmë të gatshme"></option>
                                 </datalist>
+                                <!-- <select id="FormA" class="input-field " name="" placeholder="Zgjedh" oninput="Inputforma()">
+                                    <option value="Bëje vet">Bëje vet</option>
+                                    <option value="Gjysmë të gatshme">Gjysmë të gatshme</option>
+                                </select> -->
                             </div>                            
                             <div id="InputForma1" class="col-lg col--8md-8">
 
