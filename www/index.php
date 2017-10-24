@@ -11,6 +11,14 @@
 
     <title>www.kiku3D.com</title>
     <link rel="shortcut icon" href="3dlodraCOVER.jpg" type="image/x-icon" /> 
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <!-- Custom CSS -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <script>
@@ -79,13 +87,6 @@
             to {bottom: 0; opacity: 0;}
         }
     </style>
-    
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="./slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-    <!-- Custom CSS -->
-    <link href="css/one-page-wonder.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -94,156 +95,155 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
    
-     
-
 </head>
+
 <?php
 
-	$feedback = '';
-	
-	if (isset($_POST['submit'])) {
-		
-		$forma = $_POST['forma'];
-		$EmriFemijes = $_POST['emriFemijes'];
-		$EmriLodres = $_POST['emriLodres'];
-		$Email = $_POST['email'];
-		$Adresa = $_POST['adresa'];
-		$Telefoni = $_POST['nrTelefonit'];
+    $feedback = '';
+    
+    if (isset($_POST['submit'])) {
+        
+        $forma = $_POST['forma'];
+        $EmriFemijes = $_POST['emriFemijes'];
+        $EmriLodres = $_POST['emriLodres'];
+        $Email = $_POST['email'];
+        $Adresa = $_POST['adresa'];
+        $Telefoni = $_POST['nrTelefonit'];
 
-		require 'PHPMailer/PHPMailerAutoload.php';
-		include('PHPMailer/class.phpmailer.php');
+        require 'PHPMailer/PHPMailerAutoload.php';
+        include('PHPMailer/class.phpmailer.php');
 
-		if($forma == "Bëje vet")
-		{
-			$kategoria = $_POST['Kategoria'];
-			$Radio = $_POST['radio'];
-			$Message = $_POST['message'];
-			$dimensionet = $_POST['Dimensionet'];
-	
-	
-			$mail = new PHPMailer;
-			$mail->isSMTP();                                   // Set mailer to use SMTP
-			$mail->Host = 'smtp.gmail.com';                    // Specify main and backup SMTP servers
-			$mail->SMTPAuth = true;                            // Enable SMTP authentication
-			$mail->Username = 'florimi772@gmail.com';       // SMTP username
-			$mail->Password = 'Florimi14100'; // SMTP password
-			$mail->SMTPSecure = 'tls';                         // Enable TLS encryption, `ssl` also accepted
-			$mail->Port = 587;                                 // TCP port to connect to
-	
-	
-			$mail->setFrom($Email, 'Porosit loder');
-			$mail->addReplyTo($Email, 'From');
-			$mail->addAddress('florim14hamiti@gmail.com');          //$email);   // Add a recipient
-			//$mail->addCC('cc@example.com');
-			//$mail->addBCC('bcc@example.com');
-	
-			$mail->isHTML(true);  // Set email format to HTML
-	
-			$bodyContent = 'Lloji i porosisë: '.$forma.'<br>Emri i femijës: '.$EmriFemijes.'<br>Emri i lodrës: '.$EmriLodres;
-			$bodyContent .='<br>Lloji i lodrës: '.$kategoria.'<br>Paraqitet në galerinë tonë: '.$Radio.'<br>Dimensionet: '.$dimensionet;
-			$bodyContent .='<br>Adresa: '.$Adresa.'<br>Numri i telefonit: '.$Telefoni.'<br><br>Mesazhi: '.$Message;
-	
-			$mail->Subject = "Pososit nje loder!";
-			$mail->Body = $bodyContent;
-	
-			$uploadOk = 1;
-			$imageFileType = pathinfo($_FILES["uploadFoto"]["name"],PATHINFO_EXTENSION);
-			// Check if image file is a actual image or fake image
-			if(isset($_POST["submit"])) {
-				$check = getimagesize($_FILES["uploadFoto"]["tmp_name"]);
-				if($check !== false) {
-					$uploadOk = 1;
-				} else {
-					$uploadOk = 0;
-				}
-			}
-	
-			// Check file size
-			if ($_FILES["uploadFoto"]["size"] > 500000) {
-				$feedback = "Sorry, your file is too large.";
-				$uploadOk = 0;
-			}
-	
-			// Allow certain file formats
-			if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
-				$feedback = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-				$uploadOk = 0;
-			}
-	
-			// Check if $uploadOk is set to 0 by an error
-			if ($uploadOk == 0) {
-				$feedback = "Sorry, your file was not uploaded.";
-			} else {
-				$mail->AddAttachment( $_FILES['uploadFoto']['tmp_name'], $_FILES['uploadFoto']['name'] );
-				if(!$mail->send()) {
-					$feedback = "E-mail nuk eshte derguar!";
-				} else {
-					$feedback = "E-mail eshte derguar, do ju pergjigjemi se shpejti";
-				}
-			}
-		}
-		else if($forma == "Gjysmë të gatshme")
-		{
-			$mail = new PHPMailer;
-			$mail->isSMTP();                                   // Set mailer to use SMTP
-			$mail->Host = 'smtp.gmail.com';                    // Specify main and backup SMTP servers
-			$mail->SMTPAuth = true;                            // Enable SMTP authentication
-			$mail->Username = 'florimi772@gmail.com';       // SMTP username
-			$mail->Password = 'Florimi14100'; // SMTP password
-			$mail->SMTPSecure = 'tls';                         // Enable TLS encryption, `ssl` also accepted
-			$mail->Port = 587;                                 // TCP port to connect to
-	
-	
-			$mail->setFrom($Email, 'Porosit loder');
-			$mail->addReplyTo($Email, 'From');
-			$mail->addAddress('florim14hamiti@gmail.com');          //$email);   // Add a recipient
-			//$mail->addCC('cc@example.com');
-			//$mail->addBCC('bcc@example.com');
-	
-			$mail->isHTML(true);  // Set email format to HTML
-	
-			$bodyContent = 'Lloji i porosisë: '.$forma.'<br>Emri i femijës: '.$EmriFemijes.'<br>Emri i lodrës: '.$EmriLodres;
-			$bodyContent .='<br>Adresa: '.$Adresa.'<br>Numri i telefonit: '.$Telefoni;
-	
-			$mail->Subject = "Pososit nje loder!";
-			$mail->Body = $bodyContent;
-	
-			$uploadOk = 1;
-			$imageFileType = pathinfo($_FILES["uploadFoto"]["name"],PATHINFO_EXTENSION);
-			// Check if image file is a actual image or fake image
-			if(isset($_POST["submit"])) {
-				$check = getimagesize($_FILES["uploadFoto"]["tmp_name"]);
-				if($check !== false) {
-					$uploadOk = 1;
-				} else {
-					$uploadOk = 0;
-				}
-			}
-	
-			// Check file size
-			if ($_FILES["uploadFoto"]["size"] > 500000) {
-				$feedback = "Sorry, your file is too large.";
-				$uploadOk = 0;
-			}
-	
-			// Allow certain file formats
-			if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
-				$feedback = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-				$uploadOk = 0;
-			}
-	
-			// Check if $uploadOk is set to 0 by an error
-			if ($uploadOk == 0) {
-				$feedback = "Më fal, foto-ja juaj nuk është ngarkuar.";
-			} else {
-				$mail->AddAttachment( $_FILES['uploadFoto']['tmp_name'], $_FILES['uploadFoto']['name'] );
-				if(!$mail->send()) {
-					$feedback = "E-mail nuk eshte derguar!";
-				} else {
-					$feedback = "E-mail eshte derguar, do ju pergjigjemi se shpejti";
-				}
-			}
-		}
+        if($forma == "Bëje vet")
+        {
+            $kategoria = $_POST['Kategoria'];
+            $Radio = $_POST['radio'];
+            $Message = $_POST['message'];
+            $dimensionet = $_POST['Dimensionet'];
+    
+    
+            $mail = new PHPMailer;
+            $mail->isSMTP();                                   // Set mailer to use SMTP
+            $mail->Host = 'smtp.gmail.com';                    // Specify main and backup SMTP servers
+            $mail->SMTPAuth = true;                            // Enable SMTP authentication
+            $mail->Username = 'florimi772@gmail.com';       // SMTP username
+            $mail->Password = 'Florimi14100'; // SMTP password
+            $mail->SMTPSecure = 'tls';                         // Enable TLS encryption, `ssl` also accepted
+            $mail->Port = 587;                                 // TCP port to connect to
+    
+    
+            $mail->setFrom($Email, 'Porosit loder');
+            $mail->addReplyTo($Email, 'From');
+            $mail->addAddress('florim14hamiti@gmail.com');          //$email);   // Add a recipient
+            //$mail->addCC('cc@example.com');
+            //$mail->addBCC('bcc@example.com');
+    
+            $mail->isHTML(true);  // Set email format to HTML
+    
+            $bodyContent = 'Lloji i porosisë: '.$forma.'<br>Emri i femijës: '.$EmriFemijes.'<br>Emri i lodrës: '.$EmriLodres;
+            $bodyContent .='<br>Lloji i lodrës: '.$kategoria.'<br>Paraqitet në galerinë tonë: '.$Radio.'<br>Dimensionet: '.$dimensionet;
+            $bodyContent .='<br>Adresa: '.$Adresa.'<br>Numri i telefonit: '.$Telefoni.'<br><br>Mesazhi: '.$Message;
+    
+            $mail->Subject = "Pososit nje loder!";
+            $mail->Body = $bodyContent;
+    
+            $uploadOk = 1;
+            $imageFileType = pathinfo($_FILES["uploadFoto"]["name"],PATHINFO_EXTENSION);
+            // Check if image file is a actual image or fake image
+            if(isset($_POST["submit"])) {
+                $check = getimagesize($_FILES["uploadFoto"]["tmp_name"]);
+                if($check !== false) {
+                    $uploadOk = 1;
+                } else {
+                    $uploadOk = 0;
+                }
+            }
+    
+            // Check file size
+            if ($_FILES["uploadFoto"]["size"] > 500000) {
+                $feedback = "Sorry, your file is too large.";
+                $uploadOk = 0;
+            }
+    
+            // Allow certain file formats
+            if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
+                $feedback = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+                $uploadOk = 0;
+            }
+    
+            // Check if $uploadOk is set to 0 by an error
+            if ($uploadOk == 0) {
+                $feedback = "Sorry, your file was not uploaded.";
+            } else {
+                $mail->AddAttachment( $_FILES['uploadFoto']['tmp_name'], $_FILES['uploadFoto']['name'] );
+                if(!$mail->send()) {
+                    $feedback = "E-mail nuk eshte derguar!";
+                } else {
+                    $feedback = "E-mail eshte derguar, do ju pergjigjemi se shpejti";
+                }
+            }
+        }
+        else if($forma == "Gjysmë të gatshme")
+        {
+            $mail = new PHPMailer;
+            $mail->isSMTP();                                   // Set mailer to use SMTP
+            $mail->Host = 'smtp.gmail.com';                    // Specify main and backup SMTP servers
+            $mail->SMTPAuth = true;                            // Enable SMTP authentication
+            $mail->Username = 'florimi772@gmail.com';       // SMTP username
+            $mail->Password = 'Florimi14100'; // SMTP password
+            $mail->SMTPSecure = 'tls';                         // Enable TLS encryption, `ssl` also accepted
+            $mail->Port = 587;                                 // TCP port to connect to
+    
+    
+            $mail->setFrom($Email, 'Porosit loder');
+            $mail->addReplyTo($Email, 'From');
+            $mail->addAddress('florim14hamiti@gmail.com');          //$email);   // Add a recipient
+            //$mail->addCC('cc@example.com');
+            //$mail->addBCC('bcc@example.com');
+    
+            $mail->isHTML(true);  // Set email format to HTML
+    
+            $bodyContent = 'Lloji i porosisë: '.$forma.'<br>Emri i femijës: '.$EmriFemijes.'<br>Emri i lodrës: '.$EmriLodres;
+            $bodyContent .='<br>Adresa: '.$Adresa.'<br>Numri i telefonit: '.$Telefoni;
+    
+            $mail->Subject = "Pososit nje loder!";
+            $mail->Body = $bodyContent;
+    
+            $uploadOk = 1;
+            $imageFileType = pathinfo($_FILES["uploadFoto"]["name"],PATHINFO_EXTENSION);
+            // Check if image file is a actual image or fake image
+            if(isset($_POST["submit"])) {
+                $check = getimagesize($_FILES["uploadFoto"]["tmp_name"]);
+                if($check !== false) {
+                    $uploadOk = 1;
+                } else {
+                    $uploadOk = 0;
+                }
+            }
+    
+            // Check file size
+            if ($_FILES["uploadFoto"]["size"] > 500000) {
+                $feedback = "Sorry, your file is too large.";
+                $uploadOk = 0;
+            }
+    
+            // Allow certain file formats
+            if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
+                $feedback = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+                $uploadOk = 0;
+            }
+    
+            // Check if $uploadOk is set to 0 by an error
+            if ($uploadOk == 0) {
+                $feedback = "Më fal, foto-ja juaj nuk është ngarkuar.";
+            } else {
+                $mail->AddAttachment( $_FILES['uploadFoto']['tmp_name'], $_FILES['uploadFoto']['name'] );
+                if(!$mail->send()) {
+                    $feedback = "E-mail nuk eshte derguar!";
+                } else {
+                    $feedback = "E-mail eshte derguar, do ju pergjigjemi se shpejti";
+                }
+            }
+        }
     }?>
     
     <div id="snackbar"><?php echo $feedback; ?></div>
@@ -254,33 +254,42 @@
     }
 ?>
 
-
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60"  style="background: url(BackgroundTest1.jpg); background-size: 100% 100%;background-repeat: no-repeat; ">
 
     <!-- Mali: Scripta per 2 variacionet e Porosise te InputForma -->
     <script type="text/javascript">
         function Inputforma ()
         {
+
            a=document.getElementById('FormA').value;
            console.log(a);
            if (a=='Gjysmë të gatshme') 
            {
-            document.getElementById('InputForma1').style.display='inline';
-            document.getElementById('InputForma4').style.display='none';
-            document.getElementById('InputForma5').style.display='none';
-            document.getElementById('InputForma6').style.display='none';
-            document.getElementById('InputForma7').style.display='none';
-            document.getElementById('InputformaGaleri').style.display='inline';
-            // $('#InputForma1').slideUp();
-
+            //document.getElementById('InputForma1').style.display='none';
+            //document.getElementById('InputForma4').style.display='none';
+            //document.getElementById('InputForma5').style.display='none';
+            //document.getElementById('InputForma6').style.display='none';
+            //document.getElementById('InputForma7').style.display='none';
+            //document.getElementById('InputformaGaleri').style.display='inline';
+            $('#InputForma4').slideUp();
+            $('#InputForma5').slideUp();
+            $('#InputForma6').slideUp();
+            $('#InputForma7').slideUp();
+            $('#InputformaGaleri').slideDown().show();
            }
            else
            {
-            document.getElementById('InputForma1').style.display='inline';
-            document.getElementById('InputForma4').style.display='inline';
-            document.getElementById('InputForma5').style.display='inline';
-            document.getElementById('InputForma6').style.display='inline';
-            document.getElementById('InputForma7').style.display='inline';
+            //document.getElementById('InputForma1').style.display='inline';
+            //document.getElementById('InputForma4').style.display='inline';
+            //document.getElementById('InputForma5').style.display='inline';
+            //document.getElementById('InputForma6').style.display='inline';
+            //document.getElementById('InputForma7').style.display='inline';
+            //document.getElementById('InputformaGaleri').style.display='none';
+            $('#InputForma4').slideDown();
+            $('#InputForma5').slideDown();
+            $('#InputForma6').slideDown();
+            $('#InputForma7').slideDown();
+            $('#InputformaGaleri').slideUp();
            }
 
         }
@@ -349,7 +358,8 @@
 
     <!-- Page Content -->
     <div class="container">
-        <div id="about" class="fullHeight">
+
+        <div id="about" >
             <hr class="featurette-divider">
             <!-- First Featurette -->
             <div class="featurette" >
@@ -361,7 +371,8 @@
             </div>
         </div>
         
-        <div id="services">
+
+       <div id="services">
             <hr class="featurette-divider" >
         
            
@@ -373,7 +384,6 @@
                 </h2>
                 <p class="lead">Përshkrim për produktet tona... PS: Mundet ne rrumbullkë të tillë me u paraqit edhe më shumë produkte në madhësi më të vogla  </p>
             </div> GJUPI BEJE VET TEKSTI -->
-
             <div class="featurette" >
                  <h2 class="featurette-heading"><!-- Beje vet -->
                     <span class="text-muted"><!-- <br/></t> -->Aty ku vizatimi merr jete</span>
@@ -381,7 +391,7 @@
                 <div class="row">
 
                     <div class="col-sm-12 col-md-12 col-lg-12" >
-                    <video width="80%" height="30%" muted="" loop preload="autoplay" src="Kiku-Bejevet.mp4" controls="">
+                    <video width="80%" height="30%"  loop preload="autoplay" src="Kiku-Bejevet.mp4" controls="">
                       
                     </video>
                     </div>
@@ -411,6 +421,10 @@
                 </div> -->
             </div>
         </div>
+    </div>
+
+
+
 
         <div id="gjysmeTeGatshme">
             <!-- GJUPI GJYSEM TE GATSHME SHTIM -->
@@ -423,7 +437,7 @@
                 <div class="row">
                 <!-- Mali test insert videon DIV -->
                 <div class="col-sm-12 col-md-12 col-lg-12" >
-                    <video width="80%" height="30%" muted=""  loop preload="autoplay" src="Gjysem te gatshme.mp4" controls="yourControls">
+                    <video width="80%" height="30%" loop preload="autoplay" src="Gjysem te gatshme.mp4" controls="yourControls">
                       
                     </video>
                 </div>
@@ -456,7 +470,8 @@
             </div>
         </div>
 
-        <div id="galeria" class="fullHeight">
+
+        <div id="galeria">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <section class="variable slider" >
@@ -476,126 +491,304 @@
                 </div>
             </div>
         </div>
+
+
+
         
-        <div id="contact">
+           <div id="contact">
             <hr class="featurette-divider" >
             <!-- Third Featurette -->
-            <div class="featurette"  >
+            <div class="featurette">
                 <!-- <img class="featurette-image img-circle img-responsive pull-right" src="Foto_1.jpg"> -->
                 <h2 class="featurette-heading"><!-- Prosit Online -->
                     <span class="text-muted">Ju sjellim në shtëpi</span>
                 </h2>
-                
-                
-         <form action="" method="post" id="contact-form" class="contact-form" style=" width=200px;" action="form_phpm_mailer.php" enctype="multipart/form-data">
-             <fieldset style="padding-left:25px; display: inline-block;">
-                 <legend style="text-align:left">Posrosit:</legend>
-                 <div class="row">
-                    <div id="InputFormaZgjedh" class="col-md-8 col-lg-8">
-                         <input id="FormA" list="forma" class="input-field " name="forma" placeholder="Zgjedh" oninput="Inputforma()" required="required"> 
-                         <datalist id="forma" >
-                             <option value="Bëje vet"></option>
-                             <option value="Gjysmë të gatshme"></option>
-                            </datalist>
-                    </div>
+               <!--  <p class="lead">Text rreth mënyrës si te porositet online...</p> -->
+                <!--   **************************************************************
+        INPUT FORMA
+        ************************************************************** -->
+         <form action="" method="post" id="contact-form" class="contact-form" action="form_phpm_mailer.php" enctype="multipart/form-data">
+                        <div class="row">
+                            <!-- class="col-lg-6 col-md-6" -->
+                            <div class="col-md-2 col-lg-2"></div>
+                            <div id="InputFormaZgjedh" class="col-md-8 col-lg-8">
+                                <!--<input id="FormA" list="forma" class="input-field " name="" placeholder="Zgjedh" oninput="Inputforma()"> 
+                                 <datalist id="forma" >
+                                    <option id="Bëje vet" value="Bëje vet"></option>
+                                    <option id="Gjysmë të gatshme" value="Gjysmë të gatshme"></option>
+                                </datalist> -->
+                                <select id="FormA" class="input-field-select" name="forma" placeholder="Zgjedh" oninput="Inputforma()">
+                                    <option id="Bëje vet" value="Bëje vet">Bëje vet</option>
+                                    <option id="Gjysmë të gatshme" value="Gjysmë të gatshme">Gjysmë të gatshme</option>
+                                </select>
+                                <!-- <select id="FormA" class="input-field " name="" placeholder="Zgjedh" oninput="Inputforma()">
+                                    <option value="Bëje vet">Bëje vet</option>
+                                    <option value="Gjysmë të gatshme">Gjysmë të gatshme</option>
+                                </select> -->
+                            </div>
+                            <div class="col-md-2 col-lg-2"></div>
+                        </div>
 
-                        <div id="InputForma1" class="col-lg col--8md-8">
-                            <input required="required" type="file" id="uploadFoto"  name="uploadFoto" class="btn btn-default standard-button red-button col-lg-8 col-md-8 " placeholder="Upload Foton" title="Ngarko foton e fëmijëve këtu në formatin .jpg .png .jpeg" style="display: none;" >
-                            <label for="uploadFoto" class="btn btn-default standard-button red-button col-lg-8 col-md-8">Ngarko foton
-                                <strong ></strong></label>
+
+                        <div class="row" id="InputForma1">
+                            <div class="col-md-2 col-lg-2"></div>                           
+                            
+                            <div  class="col-lg col--8md-8">
+                                <input required type="file" id="uploadFoto"  name="uploadFoto" class="btn btn-default standard-button red-button col-lg-8 col-md-8 " placeholder="Upload Foton" title="Ngarko foton e fëmijëve këtu në formatin .jpg .png .jpeg" style="display: none;" >
+                                <label for="uploadFoto" class="btn btn-default standard-button red-button col-lg-8 col-md-8">Ngarko foton</label>    
+                            </div>
+                
+                            <div class="col-md-2 col-lg-2"></div>
                         </div>
-                    
-                        <div id="InputForma2" class="col-lg-8 col-md-8">
-                            <input type="text" id="emriFemijes" name="emriFemijes" class="input-field" placeholder="Emri i Femijes" required>
+
+
+                        <div class="row">
+                        <div class="col-md-2 col-lg-2"></div>
+                            <div id="InputForma2" class="col-lg-8 col-md-8">
+                                <input type="text" id="emriFemijes" name="emriFemijes" class="input-field" placeholder="Emri i Femijes" required="required">
+                            </div>
+                        <div class="col-md-2 col-lg-2"></div>
                         </div>
-                    
-                        <div id="InputForma3" class="col-lg-8 col-md-8">
-                            <input type="text" id="emriLodres" name="emriLodres" class="input-field" placeholder="Emri i Lodres" required="required">
+
+
+                        <div class="row">
+                        <div class="col-md-2 col-lg-2"></div>
+                            <div id="InputForma3" class="col-lg-8 col-md-8">
+                                <input type="text" id="emriLodres" name="emriLodres" class="input-field" placeholder="Emri i Lodres" required="required">
+                            </div>
+                        <div class="col-md-2 col-lg-2"></div>
                         </div>
-                    
-                        <div id="InputForma4" class="col-md-8 col-lg-8">
-                            <input list="Kategoria" class="input-field" name="Kategoria" placeholder="Lloji i lodrës"> 
-                            <datalist id="Kategoria" >
-                                <option value="Perbindesh" ></option>
-                                <option value="Superhero"></option>
-                                <option value="Alien"></option>
-                                <option value="Robot"></option>
-                                <option value="Kafshe"></option>
-                                <option value="Objekt"></option>
-                                <option value="Tjeter"></option>
-                            </datalist>
+
+
+                        <div class="row" id="InputForma4">
+                        <div class="col-md-2 col-lg-2"></div>
+                            <div  class="col-md-8 col-lg-8">
+                                <!-- class="input-field" type="" name="testA"> -->
+                                <input list="Kategoria" class="input-field" name="Kategoria" placeholder="Lloji i lodrës"> 
+                                <datalist id="Kategoria" >
+                                    <option value="Perbindesh" ></option>
+                                    <option value="Superhero"></option>
+                                    <option value="Alien"></option>
+                                    <option value="Robot"></option>
+                                    <option value="Kafshe"></option>
+                                    <option value="Objekt"></option>
+                                    <option value="Tjeter"></option>
+                                </datalist>
+                            </div>
+                            <div class="col-md-2 col-lg-2"></div>
                         </div>
-                    
-                        <div id="InputForma5" class="col-lg-8 col-lg-8">
-                            <p class="input-field">A mund të paraqitet lodra dhe të dhënat më lartë në galerinë tonë</p>
-                            <input  type="radio" name="radio" value="Po">PO
-                            <input  type="radio" checked="checked" name="radio" value="Jo">JO
+
+
+
+                        <div class="row" id="InputForma5">
+                        <div class="col-md-2 col-lg-2"></div>
+                            <!-- 5 Paragrafi i lodres + radio buttonat -->
+                            <div  class="col-lg-8 col-lg-8">
+                                <p class="input-field">A mund të paraqitet lodra dhe të dhënat më lartë në galerinë tonë
+                                    <input  type="radio" name="radio" value="Po">PO
+                                    <input  type="radio" checked="checked" name="radio" value="Jo">JO
+                                </p>
+                            </div>
+                        <div class="col-md-2 col-lg-2"></div>
                         </div>
-                    
-                        <div id="InputForma6" class="col-lg-12"><br>
-                            <textarea name="message" id="message" class="input-field" rows="8" placeholder="Tregimi per lodren" title="Na tregoni më shumë për këtë lodër. C'formë është, pse i ka këto ngjyra dhe forma, çfare superfuqi ka etj."></textarea>
+
+
+                        <div class="row" id="InputForma6">
+                            <div class="col-md-2 col-lg-2"></div>
+                            <div  class="col-lg-8 col-lg-8">
+                                <textarea name="message" id="message" class="input-field" rows="8" placeholder="Tregimi per lodren" title="Na tregoni më shumë për këtë lodër. C'formë është, pse i ka këto ngjyra dhe forma, çfare superfuqi ka etj."></textarea>
+                            </div>
+                            <div class="col-md-2 col-lg-2"></div>
                         </div>
-                    
+
+
                         <div class="row" id="InputformaGaleri" style="display: none;">
                             <div  class="col-lg-12 col-lg-12">
                                 <p class="input-field">Ju lutem zgjidhni njërin nga modelet gjysmë të gatshme klikoni për të shkarkuar ato ngjyrosini dhe na i dërgoni ne që t'ju a sjellim lodër</p>
                             </div>
+                                
                             <div class="col-md-3" id="Fotoja1Galeri" >
                                 <a href="paint.jpg" download>
                                     <img src="333.png" width="75%" height="75%">
                                 </a>
                             </div>
-                            
+                                
                             <div class="col-md-3" id="Fotoja2Galeri">
                                 <a href="paint.jpg" download>
                                     <img src="666.png" width="75%" height="75%">
                                 </a>
                             </div>
-                        
+                    
                             <div class="col-md-3" id="Fotoja3Galeri">
                                 <a href="paint.jpg" download>
                                     <img src="222.png" width="75%" height="75%">
                                 </a>
-                            </div>
-                        
+                                </div>
                             <div class="col-md-3" id="Fotoja4Galeri">
                                 <a href="paint.jpg" download>
                                     <img src="888.png" width="75%" height="75%">
                                 </a>
                             </div>
-                        </div><br>
-                    
-                        <div id="InputForma7" class="col-md-8 col-lg-8">
-                            <input list="Dimensionet" class="input-field" name="Dimensionet" placeholder="Zgjedh Dimensionet">
-                            <datalist id="Dimensionet">
-                                <option value="10cm"></option>
-                                <option value="15cm"></option>
-                                <option value="20cm"></option>
-                            </datalist>
+                                
                         </div>
-                    
-                        <div id="InputForma8" class="col-lg-8 col-md-8">
-                            <input type="email" id="email" name="email" class="input-field" placeholder="Emaili" required="required" title="Ku mund të ju kontaktojmë">
+
+                        
+                        <div class="row" id="InputForma7">
+                        <div class="col-md-2 col-lg-2"></div>
+                            <div  class="col-md-8 col-lg-8">
+                                <input list="Dimensionet" class="input-field" name="Dimensionet" placeholder="Zgjedh Dimensionet">
+                                <datalist id="Dimensionet">
+                                    <option value="10cm"></option>
+                                    <option value="15cm"></option>
+                                    <option value="20cm"></option>
+                                </datalist>
+                            </div>
+                        <div class="col-md-2 col-lg-2"></div>
                         </div>
-                    
-                        <div id="InputForma9" class="col-lg-8 col-md-8">
-                            <input type="text" id="adresa" name="adresa" class="input-field" placeholder="Adressa" required="required" title="Ku dëshironi tju sjellim produktin">
+
+
+                        <div class="row">
+                        <div class="col-md-2 col-lg-2"></div>
+                            <div id="InputForma8" class="col-lg-8 col-md-8">
+                                <br><input type="email" id="email" name="email" class="input-field" placeholder="Emaili" title="Ku mund të ju kontaktojmë" required="required">
+                            </div>
+                        <div class="col-md-2 col-lg-2"></div>
                         </div>
-                    
-                        <div id="InputForma10" class="col-lg-8 col-md-8">
-                            <input type="text" id="nrTelefonit" name="nrTelefonit" class="input-field" placeholder="Numri i Telefonit" title="Alternativa tjetër e kontaktit">
+
+
+                        <div class="row">
+                        <div class="col-md-2 col-lg-2"></div>
+                            <div id="InputForma9" class="col-lg-8 col-md-8">
+                                <input type="text" id="adresa" name="adresa" class="input-field" placeholder="Adressa" title="Ku dëshironi tju sjellim produktin" required="required">
+                            </div>
+                        <div class="col-md-2 col-lg-2"></div>
                         </div>
-                    
-                        <div id="InputForma11" class="col-lg-12">
-                            <input type="submit" id="submit" name="submit" value="Dergo Porosine" class="btn btn-default standard-button red-button">
+
+
+                        <div class="row">
+                        <div class="col-md-2 col-lg-2"></div>
+                            <div id="InputForma10" class="col-lg-8 col-md-8">
+                                <input type="text" id="nrTelefonit" name="nrTelefonit" class="input-field" placeholder="Numri i Telefonit" title="Alternativa tjetër e kontaktit">
+                            </div>
+                            <div id="InputForma11" class="col-lg-12">
+                                <input type="submit" id="submit" name="submit" value="Dergo Porosine" class="btn btn-default standard-button red-button">
+                            </div>
+                        <div class="col-md-2 col-lg-2"></div>
                         </div>
-                    </div>
-                </fieldset>
-            </form>
+                    </form>
+        <!-- ************************************************************** -->
+
+
+
+
+            </div>
         </div>
-    </div>
-    
-    <hr class="featurette-divider">
+       
+      <!--   **************************************************************
+        INPUT FORMA
+        ************************************************************** -->
+        <!--  <form id="contact-form" class="contact-form">
+                        <div class="row">
+
+                            <div id="InputFormaZgjedh" class="col-md-8 col-lg-8">
+                                <input id="FormA" list="forma" class="input-field " name="" placeholder="Zgjedh" onchange="Inputforma()"> 
+                                <datalist id="forma" >
+                                    <option value="Bëje vet" ></option>
+                                    <option value="Gjysmë të gatshme"></option>
+                                </datalist>
+                            </div>                            
+                            <div id="InputForma1" class="col-lg col--8md-8">
+
+                                <input required type="file" id="uploadFoto"  name="foto" class="btn btn-default standard-button red-button col-lg-8 col-md-8 " placeholder="Upload Foton" title="Ngarko foton e fëmijëve këtu në formatin .jpg .png .jpeg" style="display: none;" >
+                                <label for="uploadFoto" class="btn btn-default standard-button red-button col-lg-8 col-md-8">Ngarko foton</label>
+
+                                
+                            </div>
+                            <div id="InputForma2" class="col-lg-8 col-md-8">
+                                <input type="text" id="name" name="name" class="input-field" placeholder="Emri i Femijes" required="required">
+                            </div>
+                            <div id="InputForma3" class="col-lg-8 col-md-8">
+                                <input type="text" id="name" name="name" class="input-field" placeholder="Emri i Lodres">
+                            </div>
+
+                            <div id="InputForma4" class="col-md-8 col-lg-8">
+                               
+                                <input list="Kategoria" class="input-field" name="" placeholder="Lloji i lodrës"> 
+                                <datalist id="Kategoria" >
+                                    <option value="Perbindesh" ></option>
+                                    <option value="Superhero"></option>
+                                    <option value="Alien"></option>
+                                    <option value="Robot"></option>
+                                    <option value="Kafshe"></option>
+                                    <option value="Objekt"></option>
+                                    <option value="Tjeter"></option>
+                                </datalist>
+                            </div>
+                            
+                            <div id="InputForma5" class="col-lg-8 col-lg-8">
+                                <p class="input-field">A mund të paraqitet lodra dhe të dhënat më lartë në galerinë tonë</p>
+                                <input  type="radio" name="radio" value="Po">PO
+                                <input  type="radio" name="radio" value="Jo">JO
+                            </div>
+
+                            <div id="InputForma6" class="col-lg-12">
+                                <textarea name="message" id="message" class="input-field" rows="8" placeholder="Tregimi per lodren" title="Na tregoni më shumë për këtë lodër. C'formë është, pse i ka këto ngjyra dhe forma, çfare superfuqi ka etj."></textarea>
+                            </div>
+
+                            <div class="row" id="InputformaGaleri" style="display: none;">
+                                <div  class="col-lg-12 col-lg-12">
+                                <p class="input-field">Ju lutem zgjidhni njërin nga modelet gjysmë të gatshme klikoni për të shkarkuar ato ngjyrosini dhe na i dërgoni ne që t'ju a sjellim lodër</p>
+                                </div>
+                                
+                                <div class="col-md-3" id="Fotoja1Galeri" >
+                                    <a href="paint.jpg" download>
+                                    <img src="paint.jpg" width="75%" height="75%">
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-3" id="Fotoja2Galeri">
+                                    <a href="paint.jpg" download>
+                                    <img src="paint.jpg" width="75%" height="75%">
+                                    </a>
+                                </div>
+                                <div class="col-md-3" id="Fotoja3Galeri">
+                                    <a href="paint.jpg" download>
+                                    <img src="paint.jpg" width="75%" height="75%">
+                                    </a>
+                                </div>
+                                <div class="col-md-3" id="Fotoja4Galeri">
+                                    <a href="paint.jpg" download>
+                                    <img src="paint.jpg" width="75%" height="75%">
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <br>
+                            <div id="InputForma7" class="col-md-8 col-lg-8">
+                                <input list="Dimensionet" class="input-field" name="" placeholder="Zgjedh Dimensionet">
+                                <datalist id="Dimensionet">
+                                    <option value="10cm"></option>
+                                    <option value="15cm"></option>
+                                    <option value="20cm"></option>
+                                </datalist>
+                            </div>
+                            <div id="InputForma8" class="col-lg-8 col-md-8">
+                                <input type="text" id="name" name="name" class="input-field" placeholder="Emaili" title="Ku mund t♪7 ju kontaktojmë">
+                            </div>
+                            <div id="InputForma9" class="col-lg-8 col-md-8">
+                                <input type="email" id="email" name="email" class="input-field" placeholder="Adressa" title="Ku dëshironi tju sjellim produktin">
+                            </div>
+                            <div id="InputForma10" class="col-lg-8 col-md-8">
+                                <input type="text" id="name" name="name" class="input-field" placeholder="Numri i Telefonit" title="Alternativa tjetër e kontaktit">
+                            </div>
+                            <div id="InputForma11" class="col-lg-12">
+                            <button onclick="window.open('mailto:test@example.com?subject=subject&body=body');" class="btn btn-default standard-button red-button">Dergo Porosine</button>
+                            </div>
+                        </div>
+                    </form> -->
+        <!-- ************************************************************** -->
+
+        <hr class="featurette-divider">
 
         <!-- Footer -->
         <footer id="footer">
@@ -614,6 +807,7 @@
                     <br>
                     <p style="text-align:center">Copyright &copy; Kiku 3DLodra 2017</p>
                 </div>
+
                 <div class="col-md-4 col-lg-4" style="text-align: center">
                    <a href="https://www.facebook.com" target="_blank"><img src="facebook32x32.png"></a>
                     <a href="https://www.instagram.com" target="_blank"><img src="instagram32x32.png"></a>
