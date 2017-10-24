@@ -68,6 +68,15 @@ body {
   padding: 0 10px 0 10px;
   margin-bottom: 24px;
 }
+.input-field-select{
+  height: 49px;
+  width: 100%;
+  border: 1px solid #888;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0 10px 0 10px;
+  margin-bottom: 24px;
+}
 .contact-form textarea.input-field {
   max-height: 225px;
   line-height: 27px;
