@@ -59,6 +59,7 @@ body {
   text-align: center;
   margin-top: 51px;
 }
+
 .contact-form .input-field {
   line-height: 49px;
   width: 100%;
@@ -78,6 +79,7 @@ body {
   margin-bottom: 24px;
 }
 .contact-form textarea.input-field {
+    resize: vertical;
   max-height: 225px;
   line-height: 27px;
   padding-top: 15px;
@@ -85,6 +87,8 @@ body {
 
 .contact-form .standard-button {
   margin-top: 17px;
+  width: 60%;
+  margin-left: 25px;
 }
 .contact-form ::-webkit-input-placeholder {
   text-align: center;
@@ -312,7 +316,4 @@ footer {
   .fullHeight{
     height: 100vh;
   }
-
-
 }
-
