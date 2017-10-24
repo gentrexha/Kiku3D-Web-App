@@ -57,6 +57,7 @@
             document.getElementById('InputForma5').style.display='inline';
             document.getElementById('InputForma6').style.display='inline';
             document.getElementById('InputForma7').style.display='inline';
+            document.getElementById('InputformaGaleri').style.display='none';
            }
 
         }
@@ -161,7 +162,7 @@
                 <div class="row">
 
                     <div class="col-sm-12 col-md-12 col-lg-12" >
-                    <video width="80%" height="30%" muted="" loop preload="autoplay" src="Kiku-Bejevet.mp4" controls="">
+                    <video width="80%" height="30%"  loop preload="autoplay" src="Kiku-Bejevet.mp4" controls="">
                       
                     </video>
                     </div>
@@ -206,7 +207,7 @@
                 <div class="row">
                 <!-- Mali test insert videon DIV -->
                 <div class="col-sm-12 col-md-12 col-lg-12" >
-                    <video width="80%" height="30%" muted=""  loop preload="autoplay" src="Gjysem te gatshme.mp4" controls="yourControls">
+                    <video width="80%" height="30%" loop preload="autoplay" src="Gjysem te gatshme.mp4" controls="yourControls">
                       
                     </video>
                 </div>
@@ -282,8 +283,8 @@
                             <div id="InputFormaZgjedh" class="col-md-8 col-lg-8">
                                 <input id="FormA" list="forma" class="input-field " name="" placeholder="Zgjedh" oninput="Inputforma()"> 
                                 <datalist id="forma" >
-                                    <option value="Bëje vet"></option>
-                                    <option value="Gjysmë të gatshme"></option>
+                                    <option id="Bëje vet" value="Bëje vet"></option>
+                                    <option id="Gjysmë të gatshme" value="Gjysmë të gatshme"></option>
                                 </datalist>
                                 <!-- <select id="FormA" class="input-field " name="" placeholder="Zgjedh" oninput="Inputforma()">
                                     <option value="Bëje vet">Bëje vet</option>
