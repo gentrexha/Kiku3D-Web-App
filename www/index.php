@@ -160,19 +160,19 @@
     
             // Check file size
             if ($_FILES["uploadFoto"]["size"] > 500000) {
-                $feedback = "Sorry, your file is too large.";
+                $feedback = "Më falni, madhësia e file-it është shumë e madhe!";
                 $uploadOk = 0;
             }
     
             // Allow certain file formats
             if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
-                $feedback = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+                $feedback = "Më falni, vetëm JPG, JPEG, PNG ose GIF file-at lejohen.";
                 $uploadOk = 0;
             }
     
             // Check if $uploadOk is set to 0 by an error
             if ($uploadOk == 0) {
-                $feedback = "Sorry, your file was not uploaded.";
+                $feedback = "Më falni, file-i juaj nuk është ngarkuar.";
             } else {
                 $mail->AddAttachment( $_FILES['uploadFoto']['tmp_name'], $_FILES['uploadFoto']['name'] );
                 if(!$mail->send()) {
@@ -222,13 +222,13 @@
     
             // Check file size
             if ($_FILES["uploadFoto"]["size"] > 500000) {
-                $feedback = "Sorry, your file is too large.";
+                $feedback = "Më falni, madhësia e file-it është shumë e madhe!";
                 $uploadOk = 0;
             }
     
             // Allow certain file formats
             if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
-                $feedback = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+                $feedback = "Më falni, vetëm JPG, JPEG, PNG ose GIF file-at lejohen.";
                 $uploadOk = 0;
             }
     
