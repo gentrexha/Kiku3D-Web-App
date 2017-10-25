@@ -502,20 +502,21 @@
 
 
         <div id="galeria">
+            <hr class="featurette-divider" >
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <section class="variable slider" >
+                <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 20px">
+                    <section class="single-item slider" style="margin: 0 auto; width: 100%;margin: 0 auto" >
                         <div style="background-color: transparent">
-                          <img src="1115x5.png">
+                          <img src="1115x5.png" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                         <div style="background-color: transparent">
-                          <img src="4445x5.png">
+                          <img src="4445x5.png" style="width:50%;height:50%;margin: 0 auto">
                         </div>
-                        <div style="background-color: transparent">
-                          <img src="5555x5.png">
+                        <div style="background-color: transparent" >
+                          <img src="5555x5.png" style="width:50%;height:50%;margin: 0 auto">
                         </div>
-                        <div style="background-color: transparent">
-                          <img src="777.png">
+                        <div style="background-color: transparent" >
+                          <img src="7775x5.png" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                     </section>
                 </div>
@@ -906,7 +907,7 @@ $(document).ready(function(){
   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript">
     $(document).on('ready', function() {
-      $(".variable").slick({
+      $(".single-item").slick({
         dots: true,
         infinite: true,
         centerMode: true,
