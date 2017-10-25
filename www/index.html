@@ -71,6 +71,29 @@
         }
 
     </script>
+    <script type="text/javascript">
+         function play(){
+            if($(".video").get(0).paused){
+                $(".video").get(0).play();
+                $("#playpause").fadeOut();
+            
+             }else{
+                $(".video").get(0).pause();
+                $("#playpause").fadeIn();
+             }
+         }
+
+         function play2(){
+            if($(".video2").get(0).paused){
+                $(".video2").get(0).play();
+                $("#playpause2").fadeOut();
+            
+             }else{
+                $(".video2").get(0).pause();
+                $("#playpause2").fadeIn();
+             }
+         }
+</script>
 <!-- Mali: Perfundimi i Skriptes -->
 
     <!-- Navigation -->
@@ -170,10 +193,14 @@
                 </h2>
                 <div class="row">
 
-                    <div class="col-sm-12 col-md-12 col-lg-12" >
-                    <video width="80%" height="30%"  loop preload="autoplay" src="Kiku-Bejevet.mp4" controls="">
+                    <div class="col-sm-12 col-md-12 col-lg-12" onclick="play()">
+                    <!-- <video width="80%" height="30%"  loop preload="autoplay" src="Kiku-Bejevet.mp4" controls="">
                       
-                    </video>
+                    </video> -->
+                        <video  class="video" width="80%" height="30%" loop preload="autoplay" src="Kiku-Bejevet.mp4" controls="yourControls">
+                      
+                        </video>
+                        <div id="playpause" ></div>
                     </div>
                     <!-- <div class="col-sm-12 col-md-3 col-lg-3">
                         <h2>Step 1-Vizatimi</h2>
@@ -216,10 +243,12 @@
                 </h2>
                 <div class="row">
                 <!-- Mali test insert videon DIV -->
-                <div class="col-sm-12 col-md-12 col-lg-12" >
-                    <video width="80%" height="30%" loop preload="autoplay" src="Gjysem te gatshme.mp4" controls="yourControls">
+                <div class="col-sm-12 col-md-12 col-lg-12" onclick="play2()">
+                    <video width="80%" height="30%" loop preload="autoplay" src="Gjysem te gatshme.mp4" controls="yourControls" class="video2">
                       
                     </video>
+                    <div id="playpause2"></div>
+                    
                 </div>
 
                     <!-- <div class="col-sm-12 col-md-3 col-lg-3">
@@ -663,6 +692,9 @@ $(document).ready(function(){
 </script>
 
 <!-- **************** -->
+
+
+
 
 </body>
 

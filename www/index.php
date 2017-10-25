@@ -295,6 +295,30 @@
         }
 
     </script>
+    </script>
+    <script type="text/javascript">
+         function play(){
+            if($(".video").get(0).paused){
+                $(".video").get(0).play();
+                $("#playpause").fadeOut();
+            
+             }else{
+                $(".video").get(0).pause();
+                $("#playpause").fadeIn();
+             }
+         }
+
+         function play2(){
+            if($(".video2").get(0).paused){
+                $(".video2").get(0).play();
+                $("#playpause2").fadeOut();
+            
+             }else{
+                $(".video2").get(0).pause();
+                $("#playpause2").fadeIn();
+             }
+         }
+</script>
 <!-- Mali: Perfundimi i Skriptes -->
 
     <!-- Navigation -->
@@ -390,10 +414,14 @@
                 </h2>
                 <div class="row">
 
-                    <div class="col-sm-12 col-md-12 col-lg-12" >
-                    <video width="80%" height="30%"  loop preload="autoplay" src="Kiku-Bejevet.mp4" controls="">
+                    <div class="col-sm-12 col-md-12 col-lg-12" onclick="play()">
+                    <!-- <video width="80%" height="30%"  loop preload="autoplay" src="Kiku-Bejevet.mp4" controls="">
                       
-                    </video>
+                    </video> -->
+                        <video  class="video" width="80%" height="30%" loop preload="autoplay" src="Kiku-Bejevet.mp4" controls="yourControls">
+                      
+                        </video>
+                        <div id="playpause" ></div>
                     </div>
                     <!-- <div class="col-sm-12 col-md-3 col-lg-3">
                         <h2>Step 1-Vizatimi</h2>
@@ -436,10 +464,12 @@
                 </h2>
                 <div class="row">
                 <!-- Mali test insert videon DIV -->
-                <div class="col-sm-12 col-md-12 col-lg-12" >
-                    <video width="80%" height="30%" loop preload="autoplay" src="Gjysem te gatshme.mp4" controls="yourControls">
+                <div class="col-sm-12 col-md-12 col-lg-12" onclick="play2()">
+                    <video width="80%" height="30%" loop preload="autoplay" src="Gjysem te gatshme.mp4" controls="yourControls" class="video2">
                       
                     </video>
+                    <div id="playpause2"></div>
+                    
                 </div>
 
                     <!-- <div class="col-sm-12 col-md-3 col-lg-3">
@@ -508,10 +538,11 @@
         INPUT FORMA
         ************************************************************** -->
          <form action="" method="post" id="contact-form" class="contact-form" action="form_phpm_mailer.php" enctype="multipart/form-data">
+                        
+
                         <div class="row">
                             <!-- class="col-lg-6 col-md-6" -->
-                            <div class="col-md-2 col-lg-2"></div>
-                            <div id="InputFormaZgjedh" class="col-md-8 col-lg-8">
+                            <div id="InputFormaZgjedh" class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
                                 <!--<input id="FormA" list="forma" class="input-field " name="" placeholder="Zgjedh" oninput="Inputforma()"> 
                                  <datalist id="forma" >
                                     <option id="Bëje vet" value="Bëje vet"></option>
@@ -526,43 +557,30 @@
                                     <option value="Gjysmë të gatshme">Gjysmë të gatshme</option>
                                 </select> -->
                             </div>
-                            <div class="col-md-2 col-lg-2"></div>
-                        </div>
-
-
-                        <div class="row" id="InputForma1">
-                            <div class="col-md-2 col-lg-2"></div>                           
-                            
-                            <div  class="col-lg col--8md-8">
-                                <input required type="file" id="uploadFoto"  name="uploadFoto" class="btn btn-default standard-button red-button col-lg-8 col-md-8 " placeholder="Upload Foton" title="Ngarko foton e fëmijëve këtu në formatin .jpg .png .jpeg" style="display: none;" >
-                                <label for="uploadFoto" class="btn btn-default standard-button red-button col-lg-8 col-md-8">Ngarko foton</label>    
-                            </div>
-                
-                            <div class="col-md-2 col-lg-2"></div>
                         </div>
 
 
                         <div class="row">
-                        <div class="col-md-2 col-lg-2"></div>
-                            <div id="InputForma2" class="col-lg-8 col-md-8">
+                        
+                            <div id="InputForma2" class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
                                 <input type="text" id="emriFemijes" name="emriFemijes" class="input-field" placeholder="Emri i Femijes" required="required">
                             </div>
-                        <div class="col-md-2 col-lg-2"></div>
+                        
                         </div>
 
 
                         <div class="row">
-                        <div class="col-md-2 col-lg-2"></div>
-                            <div id="InputForma3" class="col-lg-8 col-md-8">
+                        
+                            <div id="InputForma3" class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
                                 <input type="text" id="emriLodres" name="emriLodres" class="input-field" placeholder="Emri i Lodres" required="required">
                             </div>
-                        <div class="col-md-2 col-lg-2"></div>
+                        
                         </div>
 
 
                         <div class="row" id="InputForma4">
-                        <div class="col-md-2 col-lg-2"></div>
-                            <div  class="col-md-8 col-lg-8">
+                        
+                            <div  class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
                                 <!-- class="input-field" type="" name="testA"> -->
                                 <input list="Kategoria" class="input-field" name="Kategoria" placeholder="Lloji i lodrës"> 
                                 <datalist id="Kategoria" >
@@ -575,67 +593,84 @@
                                     <option value="Tjeter"></option>
                                 </datalist>
                             </div>
-                            <div class="col-md-2 col-lg-2"></div>
+                            
                         </div>
 
 
 
                         <div class="row" id="InputForma5">
-                        <div class="col-md-2 col-lg-2"></div>
+                        
                             <!-- 5 Paragrafi i lodres + radio buttonat -->
-                            <div  class="col-lg-8 col-lg-8">
+                            <div  class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
                                 <p class="input-field">A mund të paraqitet lodra dhe të dhënat më lartë në galerinë tonë
                                     <input  type="radio" name="radio" value="Po">PO
                                     <input  type="radio" checked="checked" name="radio" value="Jo">JO
                                 </p>
                             </div>
-                        <div class="col-md-2 col-lg-2"></div>
+                        
                         </div>
 
 
                         <div class="row" id="InputForma6">
-                            <div class="col-md-2 col-lg-2"></div>
-                            <div  class="col-lg-8 col-lg-8">
+                            
+                            <div  class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
                                 <textarea name="message" id="message" class="input-field" rows="8" placeholder="Tregimi per lodren" title="Na tregoni më shumë për këtë lodër. C'formë është, pse i ka këto ngjyra dhe forma, çfare superfuqi ka etj."></textarea>
                             </div>
-                            <div class="col-md-2 col-lg-2"></div>
+                            
                         </div>
 
 
                         <div class="row" id="InputformaGaleri" style="display: none;">
-                            <div  class="col-lg-12 col-lg-12">
+                            <div  class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
                                 <p class="input-field">Ju lutem zgjidhni njërin nga modelet gjysmë të gatshme klikoni për të shkarkuar ato ngjyrosini dhe na i dërgoni ne që t'ju a sjellim lodër</p>
                             </div>
-                                
-                            <div class="col-md-3" id="Fotoja1Galeri" >
+
+                        <div class="row">       
+                            <div class="col-lg-3 col-sm-12 col-md-3 col-md-offset-2 col-lg-offset-2" id="Fotoja1Galeri" >
                                 <a href="paint.jpg" download>
                                     <img src="333.png" width="75%" height="75%">
                                 </a>
                             </div>
-                                
-                            <div class="col-md-3" id="Fotoja2Galeri">
+                        
+
+
+                            <div class="col-lg-3 col-sm-12 col-md-3 col-md-offset-2 col-lg-offset-2" id="Fotoja2Galeri">
                                 <a href="paint.jpg" download>
                                     <img src="666.png" width="75%" height="75%">
                                 </a>
                             </div>
-                    
-                            <div class="col-md-3" id="Fotoja3Galeri">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-12 col-md-3 col-md-offset-2 col-lg-offset-2" id="Fotoja3Galeri">
                                 <a href="paint.jpg" download>
                                     <img src="222.png" width="75%" height="75%">
                                 </a>
                                 </div>
-                            <div class="col-md-3" id="Fotoja4Galeri">
+                            <div class="col-lg-3 col-sm-12 col-md-3 col-md-offset-2 col-lg-offset-2" id="Fotoja4Galeri">
                                 <a href="paint.jpg" download>
                                     <img src="888.png" width="75%" height="75%">
                                 </a>
                             </div>
                                 
                         </div>
+                    </div>
+
+                    <div class="row" id="InputForma1">
+                                                    
+                            
+                            <div  class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+                                <input   required type="file" id="uploadFoto"  name="uploadFoto" class="btn btn-default standard-button red-button" placeholder="Upload Foton" title="Ngarko foton e fëmijëve këtu në formatin .jpg .png .jpeg" style="display: none;" />
+                                <label  for="uploadFoto" class="btn btn-default standard-button red-button"  style="width: 100%;margin-left: 0px">Ngarko foton</label>    
+                            </div>
+                
+                           
+                        </div>  
 
                         
                         <div class="row" id="InputForma7">
-                        <div class="col-md-2 col-lg-2"></div>
-                            <div  class="col-md-8 col-lg-8">
+                        
+                            <div  class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
                                 <input list="Dimensionet" class="input-field" name="Dimensionet" placeholder="Zgjedh Dimensionet">
                                 <datalist id="Dimensionet">
                                     <option value="10cm"></option>
@@ -643,37 +678,40 @@
                                     <option value="20cm"></option>
                                 </datalist>
                             </div>
-                        <div class="col-md-2 col-lg-2"></div>
+                        
                         </div>
 
 
                         <div class="row">
-                        <div class="col-md-2 col-lg-2"></div>
-                            <div id="InputForma8" class="col-lg-8 col-md-8">
+                        
+                            <div id="InputForma8" class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
                                 <br><input type="email" id="email" name="email" class="input-field" placeholder="Emaili" title="Ku mund të ju kontaktojmë" required="required">
                             </div>
-                        <div class="col-md-2 col-lg-2"></div>
+                        
                         </div>
 
 
                         <div class="row">
-                        <div class="col-md-2 col-lg-2"></div>
-                            <div id="InputForma9" class="col-lg-8 col-md-8">
+                        
+                            <div id="InputForma9" class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
                                 <input type="text" id="adresa" name="adresa" class="input-field" placeholder="Adressa" title="Ku dëshironi tju sjellim produktin" required="required">
                             </div>
-                        <div class="col-md-2 col-lg-2"></div>
+                        
                         </div>
 
 
                         <div class="row">
-                        <div class="col-md-2 col-lg-2"></div>
-                            <div id="InputForma10" class="col-lg-8 col-md-8">
+                        
+                            <div id="InputForma10" class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
                                 <input type="text" id="nrTelefonit" name="nrTelefonit" class="input-field" placeholder="Numri i Telefonit" title="Alternativa tjetër e kontaktit">
                             </div>
-                            <div id="InputForma11" class="col-lg-12">
-                                <input type="submit" id="submit" name="submit" value="Dergo Porosine" class="btn btn-default standard-button red-button">
+                            
+                        
+                        </div>
+                        <div class="row">
+                            <div id="InputForma11" class="col-sm-12 col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4">
+                                <input style="width: 100%; margin-left: 0px" type="submit" id="submit" name="submit" value="Dergo Porosine" class="btn btn-default standard-button red-button">
                             </div>
-                        <div class="col-md-2 col-lg-2"></div>
                         </div>
                     </form>
         <!-- ************************************************************** -->
