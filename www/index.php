@@ -8,9 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta property="og:image" content=""/>
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <title>Kiku3D - Shendrrimi i vizatimeve te femijeve ne lojera 3D</title>
 
-    <title>www.kiku3D.com</title>
-    <link rel="shortcut icon" href="3dlodraCOVER.jpg" type="image/x-icon" /> 
+    <link rel="shortcut icon" href="images/3dlodraCOVER.jpg" type="image/x-icon" />
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -254,7 +258,7 @@
     }
 ?>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60"  style="background: url(BackgroundTest1.jpg); background-size: 100% 100%;background-repeat: no-repeat; ">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60"  style="background: url(images/BackgroundTest1.jpg); background-size: 100% 100%;background-repeat: no-repeat; ">
 
     <!-- Mali: Scripta per 2 variacionet e Porosise te InputForma -->
     <script type="text/javascript">
@@ -333,7 +337,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#myPage">3DLodra</a>
+                <a class="navbar-brand" href="#myPage">Kiku3D</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -370,7 +374,7 @@
     <header class="header-image">
 
         <div class="headline">
-                <img src="3dlodraCOVER.jpg" width=100%; height=100%; >
+                <img src="images/3dlodraCOVER.jpg" width=100%; height=100%; >
             <!-- <div class="container">
                 <h1>One Page Wonder</h1>
                 <h2>Will Knock Your Socks Off</h2>
@@ -387,7 +391,7 @@
             <hr class="featurette-divider">
             <!-- First Featurette -->
             <div class="featurette" >
-                <img class="featurette-image img-circle img-responsive pull-right" src="alieni.png" style="margin-top: 50px;">
+                <img class="featurette-image img-circle img-responsive pull-right" src="images/alieni.png" style="margin-top: 50px;">
                 <h2 class="featurette-heading"><!-- Rreth Nesh -->
                     <span class="text-muted">Lodra juaj ashtu si e keni vizatuar</span>
                 </h2>
@@ -418,7 +422,7 @@
                     <!-- <video width="80%" height="30%"  loop preload="autoplay" src="Kiku-Bejevet.mp4" controls="">
                       
                     </video> -->
-                        <video  class="video" width="80%" height="30%" loop preload="autoplay" src="Kiku-Bejevet.mp4" controls="yourControls">
+                        <video class="video" width="80%" height="30%" loop preload="autoplay" src="videos/Kiku-Bejevet.mp4" controls="yourControls">
                       
                         </video>
                         <div id="playpause" ></div>
@@ -465,7 +469,7 @@
                 <div class="row">
                 <!-- Mali test insert videon DIV -->
                 <div class="col-sm-12 col-md-12 col-lg-12" onclick="play2()">
-                    <video width="80%" height="30%" loop preload="autoplay" src="Gjysem te gatshme.mp4" controls="yourControls" class="video2">
+                    <video width="80%" height="30%" loop preload="autoplay" src="videos/Gjysem%20te%20gatshme.mp4" controls="yourControls" class="video2">
                       
                     </video>
                     <div id="playpause2"></div>
@@ -507,16 +511,16 @@
                 <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 20px">
                     <section class="single-item slider" style="margin: 0 auto; width: 100%;margin: 0 auto" >
                         <div style="background-color: transparent">
-                          <img src="1115x5.png" style="width:50%;height:50%;margin: 0 auto">
+                          <img src="images/1115x5.png" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                         <div style="background-color: transparent">
-                          <img src="4445x5.png" style="width:50%;height:50%;margin: 0 auto">
+                          <img src="images/4445x5.png" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                         <div style="background-color: transparent" >
-                          <img src="5555x5.png" style="width:50%;height:50%;margin: 0 auto">
+                          <img src="images/5555x5.png" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                         <div style="background-color: transparent" >
-                          <img src="7775x5.png" style="width:50%;height:50%;margin: 0 auto">
+                          <img src="images/7775x5.png" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                     </section>
                 </div>
@@ -628,29 +632,29 @@
 
                         <div class="row">       
                             <div class="col-lg-3 col-sm-12 col-md-3 col-md-offset-2 col-lg-offset-2" id="Fotoja1Galeri" >
-                                <a href="paint.jpg" download>
-                                    <img src="333.png" width="75%" height="75%">
+                                <a href="images/paint.jpg" download>
+                                    <img src="images/333.png" width="75%" height="75%">
                                 </a>
                             </div>
                         
 
 
                             <div class="col-lg-3 col-sm-12 col-md-3 col-md-offset-2 col-lg-offset-2" id="Fotoja2Galeri">
-                                <a href="paint.jpg" download>
-                                    <img src="666.png" width="75%" height="75%">
+                                <a href="images/paint.jpg" download>
+                                    <img src="images/666.png" width="75%" height="75%">
                                 </a>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-lg-3 col-sm-12 col-md-3 col-md-offset-2 col-lg-offset-2" id="Fotoja3Galeri">
-                                <a href="paint.jpg" download>
-                                    <img src="222.png" width="75%" height="75%">
+                                <a href="images/paint.jpg" download>
+                                    <img src="images/222.png" width="75%" height="75%">
                                 </a>
                                 </div>
                             <div class="col-lg-3 col-sm-12 col-md-3 col-md-offset-2 col-lg-offset-2" id="Fotoja4Galeri">
-                                <a href="paint.jpg" download>
-                                    <img src="888.png" width="75%" height="75%">
+                                <a href="images/paint.jpg" download>
+                                    <img src="images/888.png" width="75%" height="75%">
                                 </a>
                             </div>
                                 
@@ -844,12 +848,12 @@
                     <br>
                     <br>
                     <br>
-                    <p style="text-align:center">Copyright &copy; Kiku 3DLodra 2017</p>
+                    <p style="text-align:center">Copyright &copy; Kiku3D Lodra 2017</p>
                 </div>
 
                 <div class="col-md-4 col-lg-4" style="text-align: center">
-                   <a href="https://www.facebook.com" target="_blank"><img src="facebook32x32.png"></a>
-                    <a href="https://www.instagram.com" target="_blank"><img src="instagram32x32.png"></a>
+                   <a href="https://www.facebook.com" target="_blank"><img src="images/facebook32x32.png"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram32x32.png"></a>
                 </div>
             </div>
         </footer>

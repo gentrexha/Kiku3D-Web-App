@@ -150,7 +150,7 @@
     <header class="header-image">
 
         <div class="headline"  >
-                <img src="3dlodraCOVER.jpg" width=100%; height=100%; >
+                <img src="images/3dlodraCOVER.jpg" width=100%; height=100%; >
             <!-- <div class="container">
                 <h1>One Page Wonder</h1>
                 <h2>Will Knock Your Socks Off</h2>
@@ -166,7 +166,7 @@
 
     <!-- First Featurette -->
     <div class="featurette" id="about">
-        <img class="featurette-image img-circle img-responsive pull-right" src="foto3.jpg">
+        <img class="featurette-image img-circle img-responsive pull-right" src="images/foto3.jpg">
         <h2 class="featurette-heading">Rreth Nesh
             <span class="text-muted">"Lodra juaj ashtu si e keni vizatuar"</span>
         </h2>
@@ -177,7 +177,7 @@
 
     <!-- Second Featurette -->
     <div class="featurette" id="services">
-      <img class="featurette-image img-circle img-responsive pull-left" src="Foto_2.jpg">
+      <img class="featurette-image img-circle img-responsive pull-left" src="images/Foto_2.jpg">
             <h2 class="featurette-heading">Shërbimet dhe produktet tona  
                 <span class="text-muted">"Nji quote rreth 3dLojes"</span>
             </h2>
@@ -188,7 +188,7 @@
 
         <!-- Third Featurette -->
         <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="Foto_1.jpg">
+            <img class="featurette-image img-circle img-responsive pull-right" src="images/Foto_1.jpg">
             <h2 class="featurette-heading">Prosit Online
                 <span class="text-muted">"Ta bijm edhe te shpija :P"</span>
             </h2>
