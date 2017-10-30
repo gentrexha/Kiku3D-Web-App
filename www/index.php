@@ -130,6 +130,14 @@
                 opacity: 0;
             }
         }
+        @font-face {
+            font-family: "KiddoSoup";
+            src: url(fonts/Kiddo-soup.ttf) format("truetype");
+        }
+        * {
+            font-size: 100%;
+            font-family: KiddoSoup;
+        }
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
