@@ -323,6 +323,29 @@ body {
 
 }
 
+@media ( max-width: 770px) {
+    #qendra { 
+        margin-left: 30%!important;
+     }
+    
+
+}
+
+@media ( max-width: 420px) {
+    #qendra { 
+        margin-left: 20%!important;
+     }
+    
+
+}
+
+
+
+
+
+
+
+
 
 
     </style>
@@ -626,11 +649,6 @@ body {
             <div class="col-xs-12 col-sm-6 col-md-6" style="margin-top:60px; font-size: 90px;"id="hr"> <span id="a">a </span>  <span id="b">b </span><span id="c">c </span><span id="q">q </span></div>
             <div  class="col-sm-6 col-md-6 munges" style="margin-top:60px; font-size: 90px;"id="hr"><span id="s">s </span><span id="q">Q </span><span id="g">g </span><span id="o">o </span> </div>
 
-
-
-
-
-
             </div>
            
         </div>
@@ -774,10 +792,8 @@ body {
         <div class="container-fluid bg">
             
   
-           <div id="contact">
             <!-- Third Featurette -->
             
-            <div>
            
                 
                 <!-- <img class="featurette-image img-circle img-responsive pull-right" src="Foto_1.jpg"> -->
@@ -971,10 +987,9 @@ body {
 
 
 
-            </div>
+         
               
-        </div>
-
+        
                
 
                
@@ -1086,42 +1101,64 @@ body {
         <hr class="featurette-divider">
 
         <!-- Footer -->
+        
         <footer  id="footer">
             <div class="row">
-                <div class="col-md-4 col-lg-4" style="text-align: left">
+                <div class="col-xs-12 col-sm-4  " >
                     <p>Numri i Telefonit: (+386)49467209</p>
                     <p>Email adresa: kiku3dtoys@gmail.com</p>
-                    <p>
                 </div>
-                <div class="col-md-4 col-lg-4">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <p style="text-align:center">Copyright &copy; Kiku3D Lodra 2017</p>
+                
+
+
+
+
+
+            
+
+<div id='qendra'> 
+                <div class="col-xs-12 col-sm-3 " >  
+                <a href="http://www.ngo-pen.org/" target='_blank'> <img class='img-responsive'width=250; height=120; src="images/pen.png" /> </a>
+
                 </div>
 
-                <div class="col-md-4 col-lg-4" style="text-align: center">
-                   <a  href="https://www.facebook.com" target="_blank"><img src="images/fblogo.png"></a>
-                    <a href="https://www.instagram.com" target="_blank"><img style="width:40px; height: 40px"src="images/insta.png"></a>
+                <div class="col-xs-12 col-sm-3" >  
+                     <p> Përkrahur nga:</p>
+                     <div>
+                   <a href="https://www.unicef.org/" target='_blank'> <img class='img-responsive' width=250; height=60; src="images/unicef.png" /> </a>
+                   <a href="http://kosovoinnovations.org/" target='_blank'> <img  style='margin-top:10px;'class='img-responsive'width=250; height=60; src="images/innovation.png" /> </a>
+                    </div>
                 </div>
- 
+
+</div>
+
+
+
+                <div class="col-xs-12 col-sm-2  " >
+                <p> NA NDIQNI: </p>
+                    <div style="margin-right:20px; margin-left:20px;"> 
+                    <a href="https://www.facebook.com/kiku3d" target="_blank"><img src="images/fbfb.png"></a>
+                    <a href="https://www.instagram.com/kiku3dtoys/" target="_blank"><img style="width:40px; height: 40px"src="images/insta.png"></a>
+                </div>
         </div>
-            </div>
-            <div id="futeri" class="container-fluid text-center ">
+        </div>
+         
+                
+
+            <div style='margin-top:40px;' id="futeri" class="text-center ">
+            <p style="text-align:center">Copyright &copy; Kiku3D Lodra 2017</p>
+
                 <a href="#myPage" >
-         <span class="glyphicon glyphicon-chevron-up"></span>
+         <span style='margin-bottom:0;'class="glyphicon glyphicon-chevron-up"></span>
            </a>
 
 
-
+                </div>
 
         </footer>
     </div>
     </div>
-
+</div>
     <!-- /.container -->
 
     <!-- jQuery -->
