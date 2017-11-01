@@ -120,14 +120,14 @@ body {
 }
 .red-button {
   color: #ffffff;
-  background: #fc5f45;
+  background: #fef687!important;
 }
 .red-button:hover,
 .red-button:active,
 .red-button:active:hover,
 .red-button:focus:hover,
 .red-button:focus {
-  background-color: #f34123;
+  background-color: #fef687!important;
   color: #ffffff;
   outline: none;
 }
