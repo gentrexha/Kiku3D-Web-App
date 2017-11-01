@@ -223,7 +223,89 @@ body {
     }
 
 
-    
+    @font-face {
+            font-family: "ForKids";
+            src: url(fonts/ForKids.ttf) format("truetype");
+        }
+        #hr {
+            font-size: 100%;
+            font-family: ForKids;
+        }
+
+
+     
+
+       
+
+        @media (max-width: 700px){
+            .munges {
+                display: none!important;
+
+            }
+        }
+
+
+        @media (max-width:603px){
+            #hr{
+                font-size: 70px!important;
+
+            }
+        }
+        @media (max-width:490px){
+            #hr{
+                font-size: 90px!important;
+
+            }
+        }
+        @media (max-width:350px){
+            #hr{
+                font-size: 60px!important;
+
+            }
+        }
+
+
+
+#a:hover {
+    color: #fef687;
+}
+        
+#b:hover {
+    color: #9cd4ad;
+}
+
+#c:hover{
+    color: #f9aecf;
+}
+
+#q:hover {
+    color: #91d8f6;
+}
+
+#s:hover {
+    color: #fef687;
+}
+        
+#q:hover {
+    color: #9cd4ad;
+}
+
+#g:hover{
+    color: #f9aecf;
+}
+
+#o:hover {
+    color: #91d8f6;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: white;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #333;
+}
+
 
     </style>
 </head>
@@ -516,21 +598,32 @@ body {
         <div id="about" >
             <!-- First Featurette -->
             <div class="container">
-                <div style="margin-top:20px;" > 
+                <div style="margin-top:70px;" > 
                 <h2 class="featurette-heading"><!-- Rreth Nesh -->
                     <span>Lodra juaj ashtu si e keni vizatuar</span>
                 </h2>
                 <p class="lead"> Kiku është një start-up që mirret me prodhimin e lodrave me anë të teknologjisë 3D bazuar në vizatime. Letra gjithmonë humbet në shtëpi prandaj vizatimin e fëmijëve tuaj apo të fëmijërisë suaj silleni tek ne dhe ne ju kthejmë ato ne 3D. A ka diçka më të mirë se sa fëmija të kalojë kohën duke luajtur me lodrën të cilën e ka vizatuar vet? <br> Sjell <span style="color:#9fd2b1"> imagjinatën </span> dhe <span style="color: #f6afcf"> kreativitetin </span> tek ne, ne sjellim <span style="color: #64c1d0"> realitetin </span>  tek ju!  </br> </p><!-- Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. --></p>
             </div>  
+            <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6" style="margin-top:60px; font-size: 90px;"id="hr"> <span id="a">a </span>  <span id="b">b </span><span id="c">c </span><span id="q">q </span></div>
+            <div  class="col-sm-6 col-md-6 munges" style="margin-top:60px; font-size: 90px;"id="hr"><span id="s">s </span><span id="q">Q </span><span id="g">g </span><span id="o">o </span> </div>
+
+
+
+
+
+
+            </div>
            
+        </div>
         </div>
         </div>
         </div>
         
         <div class="container">
 
-       <div id="services">
-            <hr class="featurette-divider" >
+       <div style='margin-top: 100px;'id="services">
+       
         
            
             <!-- Second Featurette -->
@@ -543,22 +636,20 @@ body {
             </div> GJUPI BEJE VET TEKSTI -->
             <div class="featurette" >
                  <h2 class="featurette-heading"><!-- Beje vet -->
-                    <span class="center"><!-- <br/></t> -->Aty ku vizatimi merr jete</span>
+                    <span class="center"><!-- <br/></t> -->Aty ku vizatimi merr jetë</span>
                 </h2>
                 <div class="row">
 
-                    <div class="col-sm-12 col-md-12 col-lg-12" onclick="play()">
+                    <div class="embed-responsive embed-responsive-16by9" onclick="play()">
                     <!-- <video width="80%" height="30%"  loop preload="autoplay" src="Kiku-Bejevet.mp4" controls="">
                       
                     </video> -->
+                    <iframe  class="video" width="560" height="315" src="https://www.youtube.com/embed/HPHMCmxLnLE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-
-                   
-                        <video class="video center" width="80%" height="40%" loop preload="autoplay" src="videos/Kiku-Bejevet.mp4" controls="yourControls">
-                      
-                        </video>
-                        <div id="playpause" ></div>
+                         <!--             
+                        <div id="playpause" ></div> -->
                     </div>
+                   
                     <!-- <div class="col-sm-12 col-md-3 col-lg-3">
                         <h2>Step 1-Vizatimi</h2>
                         <p class="lead" style="height: 145px">Zgjidhni vizatimin qe e keni per zemer</p>
@@ -618,15 +709,13 @@ body {
             
             <div class="featurette" >
                 <h2  class="featurette-heading" ><!-- Gjysem te gateshme -->
-                    <span  class="center"> Aty ku vizatimi merr jete</span>
+                    <span  class="center"> Gjysmë të gatshme</span>
                 </h2>
                 <div class="row">
                 <!-- Mali test insert videon DIV -->
-                <div  class="col-sm-12 col-md-12 col-lg-12" onclick="play2()">
-                    <video poster="images/kikupc.jpg" width="80%" height="40%" loop preload="autoplay" src="videos/Gjysem%20te%20gatshme.mp4" controls="yourControls" class="video2 center">
-                      
+                <div  class="embed-responsive embed-responsive-16by9" onclick="play2()">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F-GpzK3Qgvw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>                      
                     </video>
-                    <div id="playpause2"></div>
                     
                 </div>
 
@@ -818,6 +907,7 @@ body {
                             </div>
                         
                         </div>
+                        <footer  id="footer">
 
 
                         <div class="row">
