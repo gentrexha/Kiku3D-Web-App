@@ -318,6 +318,13 @@ body {
     background-color: #f6f6f6;
 }
 
+#futeri {
+    background-color: #f6f6f6;
+
+}
+
+
+
     </style>
 </head>
 
@@ -761,12 +768,18 @@ body {
 
 
                 </div>
-
+               
+                
 
         <div class="container-fluid bg">
+            
+  
            <div id="contact">
             <!-- Third Featurette -->
+            
             <div>
+           
+                
                 <!-- <img class="featurette-image img-circle img-responsive pull-right" src="Foto_1.jpg"> -->
                 <h2 class="featurette-heading"><!-- Prosit Online -->
                     <span class="center divi" >Ju sjellim në shtëpi</span>
@@ -959,7 +972,13 @@ body {
 
 
             </div>
+              
         </div>
+
+               
+
+               
+
       <!--   **************************************************************
         INPUT FORMA
         ************************************************************** -->
