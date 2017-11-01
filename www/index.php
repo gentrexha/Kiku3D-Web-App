@@ -198,7 +198,14 @@ body {
       font-size: 30px;
       margin-bottom: 0px;
       color: #fef687!important;
+
   }
+
+  #futeri {
+    background-color: #f6f6f6;
+
+  }
+
 
  
     .center {
@@ -306,6 +313,10 @@ body {
   background-color: #333;
 }
 
+
+.bg {
+    background-color: #f6f6f6;
+}
 
     </style>
 </head>
@@ -746,19 +757,19 @@ body {
             
             </div>
         </div>
+        <hr class="featurette-divider" >
 
 
+                </div>
 
 
-
-        
+        <div class="container-fluid bg">
            <div id="contact">
-            <hr class="featurette-divider" >
             <!-- Third Featurette -->
             <div>
                 <!-- <img class="featurette-image img-circle img-responsive pull-right" src="Foto_1.jpg"> -->
                 <h2 class="featurette-heading"><!-- Prosit Online -->
-                    <span class="center" style="color: #fef687">Ju sjellim në shtëpi</span>
+                    <span class="center divi" >Ju sjellim në shtëpi</span>
                 </h2>
                <!--  <p class="lead">Text rreth mënyrës si te porositet online...</p> -->
                 <!--   **************************************************************
@@ -829,7 +840,7 @@ body {
                         
                             <!-- 5 Paragrafi i lodres + radio buttonat -->
                             <div  class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
-                                <p class="input-field">A mund të paraqitet lodra dhe të dhënat më lartë në galerinë tonë
+                                <p style="background-color: #fef687"class="input-field">A mund të paraqitet lodra dhe të dhënat më lartë në galerinë tonë
                                     <input  type="radio" name="radio" value="Po">PO
                                     <input  type="radio" checked="checked" name="radio" value="Jo">JO
                                 </p>
@@ -949,7 +960,6 @@ body {
 
             </div>
         </div>
-       
       <!--   **************************************************************
         INPUT FORMA
         ************************************************************** -->
@@ -1091,6 +1101,8 @@ body {
 
         </footer>
     </div>
+    </div>
+
     <!-- /.container -->
 
     <!-- jQuery -->
