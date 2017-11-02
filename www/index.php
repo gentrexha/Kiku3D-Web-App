@@ -7,14 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <meta property="og:image" content=""/>
-    <meta property="og:title" content="" />
+    <meta name="author" content="Viona Stavileci">
+    <meta property="og:image" content="images/3dlodraPROFIL.jpg"/>
+    <meta property="og:title" content="Kiku3D - Shnderrimi i vizatimeve te femijeve ne lojera 3D" />
     <meta property="og:description" content="" />
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="http://www.kiku3d.com" />
     <title>Kiku3D - Shnderrimi i vizatimeve te femijeve ne lojera 3D</title>
-
-    <link rel="shortcut icon" href="images/3dlodraCOVER.jpg" type="image/x-icon" />
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
