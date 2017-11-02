@@ -325,15 +325,44 @@ body {
 
 @media ( max-width: 770px) {
     #qendra { 
-        margin-left: 30%!important;
+        margin-left: 10%;
      }
     
 
 }
 
-@media ( max-width: 420px) {
-    #qendra { 
-        margin-left: 20%!important;
+@media ( max-width: 767px) {
+    .margjina { 
+        margin-top: 5%;
+     }
+    
+
+}
+
+@media (max-width: 767px) {
+    #perkrahja { 
+        margin-right: 20px!important;
+        text-align: center!important;
+     }
+    
+
+}
+
+@media ( max-width: 767px) {
+    #ndjekja { 
+        margin-bottom: 30px!important;
+     }
+    
+
+}
+
+
+
+@media ( max-width: 767px) {
+    .divideri { 
+        margin-top: 30px!important;
+        margin-bottom: 30px!important;
+
      }
     
 
@@ -716,7 +745,7 @@ body {
 
     
     <div id="gjysmeTeGatshme">
-            <hr class="featurette-divider" >
+            <hr class="featurette-divider divideri" >
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 20px">
                     <section class="single-item slider" style="margin: 0 auto; width: 100%;margin: 0 auto" >
@@ -741,7 +770,7 @@ body {
 
         <div id="gjysmeTeGatshme">
             <!-- GJUPI GJYSEM TE GATSHME SHTIM -->
-            <hr class="featurette-divider" >
+            <hr class="featurette-divider divideri" >
             
             <div class="featurette" >
                 <h2  class="featurette-heading" ><!-- Gjysem te gateshme -->
@@ -794,7 +823,7 @@ body {
   
             <!-- Third Featurette -->
             
-           
+           <div id="contact">
                 
                 <!-- <img class="featurette-image img-circle img-responsive pull-right" src="Foto_1.jpg"> -->
                 <h2 class="featurette-heading"><!-- Prosit Online -->
@@ -947,8 +976,9 @@ body {
                             </div>
                         
                         </div>
-                        <footer  id="footer">
+                        
 
+                        <div id="footer">
 
                         <div class="row">
                         
@@ -984,7 +1014,7 @@ body {
                     </form>
         <!-- ************************************************************** -->
 
-
+     </div>
 
 
          
@@ -1104,12 +1134,18 @@ body {
         
         <footer  id="footer">
             <div class="row">
-                <div class="col-xs-12 col-sm-4  " >
+                <div class="col-xs-12 col-sm-4 text-center" >
                     <p>Numri i Telefonit: (+386)49467209</p>
                     <p>Email adresa: kiku3dtoys@gmail.com</p>
                 </div>
                 
-
+                <div class="col-xs-12 col-sm-2 text-center"  >
+                <p> NA NDIQNI: </p>
+                    <div id='ndjekja'> 
+                    <a href="https://www.facebook.com/kiku3d" target="_blank"><img src="images/fbfb.png"></a>
+                    <a href="https://www.instagram.com/kiku3dtoys/" target="_blank"><img style="width:40px; height: 40px"src="images/insta.png"></a>
+                </div>
+                    </div>
 
 
 
@@ -1117,35 +1153,31 @@ body {
             
 
 <div id='qendra'> 
-                <div class="col-xs-12 col-sm-3 " >  
-                <a href="http://www.ngo-pen.org/" target='_blank'> <img class='img-responsive'width=250; height=120; src="images/pen.png" /> </a>
-
-                </div>
-
-                <div class="col-xs-12 col-sm-3" >  
-                     <p> Përkrahur nga:</p>
-                     <div>
+                        <p id='perkrahja'>PËRKRAHUR NGA: </p>
+               
+                <div class="col-xs-6 col-sm-3 margjina" >  
+                
                    <a href="https://www.unicef.org/" target='_blank'> <img class='img-responsive' width=250; height=60; src="images/unicef.png" /> </a>
                    <a href="http://kosovoinnovations.org/" target='_blank'> <img  style='margin-top:10px;'class='img-responsive'width=250; height=60; src="images/innovation.png" /> </a>
-                    </div>
                 </div>
+
+
+                <div class="col-xs-6 col-sm-3 margjina" >  
+                <a href="http://www.ngo-pen.org/" target='_blank'> <img class='img-responsive'width=200; height=80; src="images/pen.png" /> </a>
+
+                </div>
+
 
 </div>
 
 
 
-                <div class="col-xs-12 col-sm-2  " >
-                <p> NA NDIQNI: </p>
-                    <div style="margin-right:20px; margin-left:20px;"> 
-                    <a href="https://www.facebook.com/kiku3d" target="_blank"><img src="images/fbfb.png"></a>
-                    <a href="https://www.instagram.com/kiku3dtoys/" target="_blank"><img style="width:40px; height: 40px"src="images/insta.png"></a>
-                </div>
         </div>
         </div>
          
                 
 
-            <div style='margin-top:40px;' id="futeri" class="text-center ">
+            <div id="futeri" class="text-center ">
             <p style="text-align:center">Copyright &copy; Kiku3D Lodra 2017</p>
 
                 <a href="#myPage" >
