@@ -1159,11 +1159,13 @@ body {
                 
                    <a href="https://www.unicef.org/" target='_blank'> <img class='img-responsive' width=250; height=60; src="images/unicef.png" /> </a>
                    <a href="http://kosovoinnovations.org/" target='_blank'> <img  style='margin-top:10px;'class='img-responsive'width=250; height=60; src="images/innovation.png" /> </a>
+                   <a href="http://www.riinvest.net/Home.aspx" target='_blank'> <img  style='margin-top:10px;'class='img-responsive'width=250; height=60; src="images/Riinvest_logo.png" /> </a>
+
                 </div>
 
 
                 <div class="col-xs-6 col-sm-3 margjina" >  
-                <a href="http://www.ngo-pen.org/" target='_blank'> <img class='img-responsive'width=200; height=80; src="images/pen.png" /> </a>
+                <a href="http://www.ngo-pen.org/" target='_blank'> <img class='img-responsive'width=300; height=120; src="images/pen.png" /> </a>
 
                 </div>
 
