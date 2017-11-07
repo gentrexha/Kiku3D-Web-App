@@ -368,15 +368,6 @@ body {
 
 }
 
-
-
-
-
-
-
-
-
-
     </style>
 </head>
 
@@ -405,25 +396,25 @@ body {
     
     
             $mail = new PHPMailer;
-            $mail->isSMTP();                                   // Set mailer to use SMTP
-            $mail->Host = 'smtp.gmail.com';                    // Specify main and backup SMTP servers
-            $mail->SMTPAuth = true;                            // Enable SMTP authentication
-            $mail->Username = 'florimi772@gmail.com';       // SMTP username
-            $mail->Password = 'Florimi14100'; // SMTP password
-            $mail->SMTPSecure = 'tls';                         // Enable TLS encryption, `ssl` also accepted
-            $mail->Port = 587;                                 // TCP port to connect to
+            $mail->isSMTP();                                   // Perdorimi i SMTP
+            $mail->Host = 'smtp.gmail.com';                    // Specifikimi i SMTP severit kryesor dhe te atij backup
+            $mail->SMTPAuth = true;                            // Lejimi i perdorimit te SMTP autetifikimit
+            $mail->Username = 'florimi772@gmail.com';          // SMTP perdoruesi
+            $mail->Password = 'Florimi14100';                   // SMTP password-i
+            $mail->SMTPSecure = 'tls';                         // Lejimi i enkriptimit TLS
+            $mail->Port = 587;                                 // TCP porit per tu konektuar
     
     
             $mail->setFrom($Email, 'Porosit loder');
             $mail->addReplyTo($Email, 'From');
-            $mail->addAddress('florim14hamiti@gmail.com');          //$email);   // Add a recipient
+            $mail->addAddress('kiku3dtoys@gmail.com');          //$email);   // Shtimi i marresit te e-mailt
             //$mail->addCC('cc@example.com');
             //$mail->addBCC('bcc@example.com');
     
-            $mail->isHTML(true);  // Set email format to HTML
+            $mail->isHTML(true);  
     
             $bodyContent = 'Lloji i porosisë: '.$forma.'<br>Emri i femijës: '.$EmriFemijes.'<br>Emri i lodrës: '.$EmriLodres;
-            $bodyContent .='<br>Lloji i lodrës: '.$kategoria.'<br>Paraqitet në galerinë tonë: '.$Radio.'<br>Dimensionet: '.$dimensionet;
+            $bodyContent .='<br>Lloji i lodrës: '.$kategoria.'<br>A mund të paraqitet në galerinë tonë: '.$Radio.'<br>Dimensionet: '.$dimensionet;
             $bodyContent .='<br>Adresa: '.$Adresa.'<br>Numri i telefonit: '.$Telefoni.'<br><br>Mesazhi: '.$Message;
     
             $mail->Subject = "Pososit nje loder!";
@@ -431,7 +422,8 @@ body {
     
             $uploadOk = 1;
             $imageFileType = pathinfo($_FILES["uploadFoto"]["name"],PATHINFO_EXTENSION);
-            // Check if image file is a actual image or fake image
+            
+            // Kontollimi nese foto-ja eshte foto e vertete ose mashtrim
             if(isset($_POST["submit"])) {
                 $check = getimagesize($_FILES["uploadFoto"]["tmp_name"]);
                 if($check !== false) {
@@ -441,25 +433,25 @@ body {
                 }
             }
     
-            // Check file size
+            // Kontollimi i madhesise se file-it
             if ($_FILES["uploadFoto"]["size"] > 500000) {
                 $feedback = "Më falni, madhësia e file-it është shumë e madhe!";
                 $uploadOk = 0;
             }
     
-            // Allow certain file formats
+            // Lejimi i vetem disa formateve te file-ave
             if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
                 $feedback = "Më falni, vetëm JPG, JPEG, PNG ose GIF file-at lejohen.";
                 $uploadOk = 0;
             }
     
-            // Check if $uploadOk is set to 0 by an error
+            // Kontrollimi nese $uploadOk eshte vendosur ne zero nga ndonje error
             if ($uploadOk == 0) {
-                $feedback = "Më falni, file-i juaj nuk është ngarkuar.";
+                $feedback = "Më falni, foto-ja juaj nuk është ngarkuar.";
             } else {
                 $mail->AddAttachment( $_FILES['uploadFoto']['tmp_name'], $_FILES['uploadFoto']['name'] );
                 if(!$mail->send()) {
-                    $feedback = "E-mail nuk eshte derguar!";
+                    $feedback = "Gabim! E-mail nuk eshte derguar.";
                 } else {
                     $feedback = "E-mail eshte derguar, do ju pergjigjemi se shpejti";
                 }
@@ -468,22 +460,22 @@ body {
         else if($forma == "Gjysmë të gatshme")
         {
             $mail = new PHPMailer;
-            $mail->isSMTP();                                   // Set mailer to use SMTP
-            $mail->Host = 'smtp.gmail.com';                    // Specify main and backup SMTP servers
-            $mail->SMTPAuth = true;                            // Enable SMTP authentication
-            $mail->Username = 'florimi772@gmail.com';       // SMTP username
-            $mail->Password = 'Florimi14100'; // SMTP password
-            $mail->SMTPSecure = 'tls';                         // Enable TLS encryption, `ssl` also accepted
-            $mail->Port = 587;                                 // TCP port to connect to
+            $mail->isSMTP();                                   // Perdorimi i SMTP
+            $mail->Host = 'smtp.gmail.com';                    // Specifikimi i SMTP severit kryesor dhe te atij backup
+            $mail->SMTPAuth = true;                            // Lejimi i perdorimit te SMTP autetifikimit
+            $mail->Username = 'florimi772@gmail.com';          // SMTP perdoruesi
+            $mail->Password = 'Florimi14100';                  // SMTP password-i
+            $mail->SMTPSecure = 'tls';                         // Lejimi i enkriptimit TLS
+            $mail->Port = 587;                                 // TCP porit per tu konektuar
     
     
             $mail->setFrom($Email, 'Porosit loder');
             $mail->addReplyTo($Email, 'From');
-            $mail->addAddress('florim14hamiti@gmail.com');          //$email);   // Add a recipient
+            $mail->addAddress('kiku3dtoys@gmail.com');          // Shtimi i marresit te e-mailit
             //$mail->addCC('cc@example.com');
             //$mail->addBCC('bcc@example.com');
     
-            $mail->isHTML(true);  // Set email format to HTML
+            $mail->isHTML(true);  
     
             $bodyContent = 'Lloji i porosisë: '.$forma.'<br>Emri i femijës: '.$EmriFemijes.'<br>Emri i lodrës: '.$EmriLodres;
             $bodyContent .='<br>Adresa: '.$Adresa.'<br>Numri i telefonit: '.$Telefoni;
@@ -493,7 +485,8 @@ body {
     
             $uploadOk = 1;
             $imageFileType = pathinfo($_FILES["uploadFoto"]["name"],PATHINFO_EXTENSION);
-            // Check if image file is a actual image or fake image
+
+            // Kontollimi nese foto-ja eshte foto e vertete ose mashtrim
             if(isset($_POST["submit"])) {
                 $check = getimagesize($_FILES["uploadFoto"]["tmp_name"]);
                 if($check !== false) {
@@ -503,25 +496,25 @@ body {
                 }
             }
     
-            // Check file size
+            // Kontrollimi i madhesise se file-it
             if ($_FILES["uploadFoto"]["size"] > 500000) {
                 $feedback = "Më falni, madhësia e file-it është shumë e madhe!";
                 $uploadOk = 0;
             }
     
-            // Allow certain file formats
+            // Lejimi i vetem disa formateve te file-it per tu ngarkuar
             if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
                 $feedback = "Më falni, vetëm JPG, JPEG, PNG ose GIF file-at lejohen.";
                 $uploadOk = 0;
             }
     
-            // Check if $uploadOk is set to 0 by an error
+            // Kontrollimi nese $uploadOk eshte vendosu ne 0 nga ndonje error
             if ($uploadOk == 0) {
                 $feedback = "Më fal, foto-ja juaj nuk është ngarkuar.";
             } else {
                 $mail->AddAttachment( $_FILES['uploadFoto']['tmp_name'], $_FILES['uploadFoto']['name'] );
                 if(!$mail->send()) {
-                    $feedback = "E-mail nuk eshte derguar!";
+                    $feedback = "Gabim! E-mail nuk eshte derguar.";
                 } else {
                     $feedback = "E-mail eshte derguar, do ju pergjigjemi se shpejti";
                 }
@@ -844,7 +837,7 @@ body {
                                     <option id="Bëje vet" value="Bëje vet"></option>
                                     <option id="Gjysmë të gatshme" value="Gjysmë të gatshme"></option>
                                 </datalist> -->
-                                <select id="FormA" class="input-field-select" name="forma" placeholder="Zgjedh" oninput="Inputforma()">
+                                <select id="FormA" class="input-field-select" name="forma" placeholder="Zgjedh" style="text-align-last:center" oninput="Inputforma()">
                                     <option id="Bëje vet" value="Bëje vet">Bëje vet</option>
                                     <option id="Gjysmë të gatshme" value="Gjysmë të gatshme">Gjysmë të gatshme</option>
                                 </select>
@@ -874,23 +867,24 @@ body {
                         </div>
 
 
-                        <div class="row" id="InputForma4">
-                        
-                            <div  class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
-                                <!-- class="input-field" type="" name="testA"> -->
-                                <input list="Kategoria" class="input-field" name="Kategoria" placeholder="Lloji i lodrës"> 
-                                <datalist id="Kategoria" >
-                                    <option value="Perbindesh" ></option>
-                                    <option value="Superhero"></option>
-                                    <option value="Alien"></option>
-                                    <option value="Robot"></option>
-                                    <option value="Kafshe"></option>
-                                    <option value="Objekt"></option>
-                                    <option value="Tjeter"></option>
-                                </datalist>
+                        <div class="row">
+                            <!-- class="col-lg-6 col-md-6" -->
+                            <div id="InputForma4" style="text-align-last:center" class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+                                
+                                <select id="Kategoria" class="input-field-select" name="Kategoria" placeholder="Zgjedh Katekorinë">
+                                    <option value="" disabled selected>Zgjedhe Lodrën</option>
+                                    <option value="Perbindesh">Perbindesh</option>
+                                    <option value="Superhero">Superhero</option>
+                                    <option value="Alien">Alien</option>
+                                    <option value="Robot">Robot</option>
+                                    <option value="Kafshe">Kafshe</option>
+                                    <option value="Objekt">Objekt</option>
+                                    <option value="Tjeter">Tjeter</option>
+                                </select>
                             </div>
-                            
                         </div>
+
+                        
 
 
 
@@ -923,7 +917,7 @@ body {
 
                         <div class="row">       
                             <div class="col-lg-3 col-sm-12 col-md-3 col-md-offset-2 col-lg-offset-2" id="Fotoja1Galeri" >
-                                <a href="images/paint.jpg" download>
+                                <a href="images/333.png " download>
                                     <img src="images/333.png" width="75%" height="75%">
                                 </a>
                             </div>
@@ -931,7 +925,7 @@ body {
 
 
                             <div class="col-lg-3 col-sm-12 col-md-3 col-md-offset-2 col-lg-offset-2" id="Fotoja2Galeri">
-                                <a href="images/paint.jpg" download>
+                                <a href="images/666.png" download>
                                     <img src="images/666.png" width="75%" height="75%">
                                 </a>
                             </div>
@@ -939,12 +933,12 @@ body {
 
                         <div class="row">
                             <div class="col-lg-3 col-sm-12 col-md-3 col-md-offset-2 col-lg-offset-2" id="Fotoja3Galeri">
-                                <a href="images/paint.jpg" download>
+                                <a href="images/222.png" download>
                                     <img src="images/222.png" width="75%" height="75%">
                                 </a>
                                 </div>
                             <div class="col-lg-3 col-sm-12 col-md-3 col-md-offset-2 col-lg-offset-2" id="Fotoja4Galeri">
-                                <a href="images/paint.jpg" download>
+                                <a href="images/888.png" download>
                                     <img src="images/888.png" width="75%" height="75%">
                                 </a>
                             </div>
@@ -963,18 +957,17 @@ body {
                            
                         </div>  
 
-                        
-                        <div class="row" id="InputForma7">
-                        
-                            <div  class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
-                                <input list="Dimensionet" class="input-field" name="Dimensionet" placeholder="Zgjedh Dimensionet">
-                                <datalist id="Dimensionet">
-                                    <option value="10cm"></option>
-                                    <option value="15cm"></option>
-                                    <option value="20cm"></option>
-                                </datalist>
+                        <div class="row">
+                            <!-- class="col-lg-6 col-md-6" -->
+                            <div id="InputForma7" class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+                                
+                                <select id="Dimensionet" class="input-field-select" style="text-align-last:center" name="Dimensionet" placeholder="Zgjedh Katekorinë">
+                                    <option value="" disabled selected>Zgjedh Dimensionet</option>
+                                    <option value="10cm">10 cm</option>
+                                    <option value="15cm">15 cm</option>
+                                    <option value="20cm">20 cm</option>
+                                </select>
                             </div>
-                        
                         </div>
                         
 
