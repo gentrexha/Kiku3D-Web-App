@@ -741,16 +741,38 @@ body {
                 <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 20px">
                     <section class="single-item slider" style="margin: 0 auto; width: 100%;margin: 0 auto" >
                         <div style="background-color: transparent">
-                          <img src="images/1115x5.png" style="width:50%;height:50%;margin: 0 auto">
+                          <img src="images/blobby.jpg" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                         <div style="background-color: transparent">
-                          <img src="images/4445x5.png" style="width:50%;height:50%;margin: 0 auto">
+                          <img src="images/Business card holder.jpg" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                         <div style="background-color: transparent" >
-                          <img src="images/5555x5.png" style="width:50%;height:50%;margin: 0 auto">
+                          <img src="images/Dekorimi.jpg" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                         <div style="background-color: transparent" >
-                          <img src="images/7775x5.png" style="width:50%;height:50%;margin: 0 auto">
+                          <img src="images/Detaje.jpg" style="width:50%;height:50%;margin: 0 auto">
+                        </div>
+                        <div style="background-color: transparent" >
+                          <img src="images/Dinosauri levizes.jpg" style="width:50%;height:50%;margin: 0 auto">
+                        </div>
+						
+						<div style="background-color: transparent">
+                          <img src="images/Glow in the dark.jpg" style="width:50%;height:50%;margin: 0 auto">
+                        </div>
+                        <div style="background-color: transparent">
+                          <img src="images/Oktapodi levizes.jpg" style="width:50%;height:50%;margin: 0 auto">
+                        </div>
+                        <div style="background-color: transparent" >
+                          <img src="images/Phone holder elephant.jpg" style="width:50%;height:50%;margin: 0 auto">
+                        </div>
+                        <div style="background-color: transparent" >
+                          <img src="images/Skeletoni levizes.jpg" style="width:50%;height:50%;margin: 0 auto">
+                        </div>
+                        <div style="background-color: transparent" >
+                          <img src="images/Vazoja.jpg" style="width:50%;height:50%;margin: 0 auto">
+                        </div>
+                        <div style="background-color: transparent" >
+                          <img src="images/Zhapulini.jpg" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                     </section>
                 </div>
