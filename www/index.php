@@ -739,40 +739,40 @@ body {
             <hr class="featurette-divider divideri" >
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 20px">
-                    <section class="single-item slider" style="margin: 0 auto; width: 100%;margin: 0 auto" >
+                    <section class="single-item slider" >
                         <div style="background-color: transparent">
-                          <img src="images/blobby.jpg" style="width:50%;height:50%;margin: 0 auto">
+                          <img class="img-responsive" src="images/blobby.jpg">
                         </div>
                         <div style="background-color: transparent">
-                          <img src="images/Business card holder.jpg" style="width:50%;height:50%;margin: 0 auto">
+                          <img class="img-responsive" src="images/Business card holder.jpg" >
                         </div>
                         <div style="background-color: transparent" >
-                          <img src="images/Dekorimi.jpg" style="width:50%;height:50%;margin: 0 auto">
+                          <img class="img-responsive" src="images/Dekorimi.jpg" >
                         </div>
                         <div style="background-color: transparent" >
-                          <img src="images/Detaje.jpg" style="width:50%;height:50%;margin: 0 auto">
+                          <img class="img-responsive" src="images/Detaje.jpg" >
                         </div>
                         <div style="background-color: transparent" >
-                          <img src="images/Dinosauri levizes.jpg" style="width:50%;height:50%;margin: 0 auto">
+                          <img class="img-responsive" src="images/Dinosauri levizes.jpg" >
                         </div>
 						
 						<div style="background-color: transparent">
-                          <img src="images/Glow in the dark.jpg" style="width:50%;height:50%;margin: 0 auto">
+                          <img  class="img-responsive"src="images/Glow in the dark.jpg" >
                         </div>
                         <div style="background-color: transparent">
-                          <img src="images/Oktapodi levizes.jpg" style="width:50%;height:50%;margin: 0 auto">
+                          <img  class="img-responsive" src="images/Oktapodi levizes.jpg" >
                         </div>
                         <div style="background-color: transparent" >
-                          <img src="images/Phone holder elephant.jpg" style="width:50%;height:50%;margin: 0 auto">
+                          <img  class="img-responsive" src="images/Phone holder elephant.jpg" >
                         </div>
                         <div style="background-color: transparent" >
-                          <img src="images/Skeletoni levizes.jpg" style="width:50%;height:50%;margin: 0 auto">
+                          <img class="img-responsive" src="images/Skeletoni levizes.jpg" >
                         </div>
                         <div style="background-color: transparent" >
-                          <img src="images/Vazoja.jpg" style="width:50%;height:50%;margin: 0 auto">
+                          <img class="img-responsive" src="images/Vazoja.jpg" >
                         </div>
                         <div style="background-color: transparent" >
-                          <img src="images/Zhapulini.jpg" style="width:50%;height:50%;margin: 0 auto">
+                          <img  class="img-responsive" src="images/Zhapulini.jpg" >
                         </div>
                     </section>
                 </div>
@@ -1259,9 +1259,11 @@ $(document).ready(function(){
   <script type="text/javascript">
     $(document).on('ready', function() {
       $(".single-item").slick({
-        dots: true,
+        dots: false,
         infinite: true,
         centerMode: true,
+        fade: true,
+  cssEase: 'linear'
         
       });
     });
