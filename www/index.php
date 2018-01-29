@@ -397,15 +397,15 @@ body {
             $mail->isSMTP();                                   // Perdorimi i SMTP
             $mail->Host = 'smtp.gmail.com';                    // Specifikimi i SMTP severit kryesor dhe te atij backup
             $mail->SMTPAuth = true;                            // Lejimi i perdorimit te SMTP autetifikimit
-            $mail->Username = 'florimi772@gmail.com';          // SMTP perdoruesi
-            $mail->Password = 'Florimi14100';                   // SMTP password-i
+            $mail->Username = 'kiku3dtoys@gmail.com';          // SMTP perdoruesi
+            $mail->Password = '';                // SMTP password-i
             $mail->SMTPSecure = 'tls';                         // Lejimi i enkriptimit TLS
             $mail->Port = 587;                                 // TCP porit per tu konektuar
     
     
             $mail->setFrom($Email, 'Porosit loder');
             $mail->addReplyTo($Email, 'From');
-            $mail->addAddress('kiku3dtoys@gmail.com');          //$email);   // Shtimi i marresit te e-mailt
+            //$mail->addAddress('kiku3dtoys@gmail.com');          //$email);   // Shtimi i marresit te e-mailt kiku3dtoys@gmail.com
             //$mail->addCC('cc@example.com');
             //$mail->addBCC('bcc@example.com');
     
@@ -739,40 +739,40 @@ body {
             <hr class="featurette-divider divideri" >
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 20px">
-                    <section class="single-item slider" >
+                    <section class="single-item slider" style="margin: 0 auto; width: 100%;margin: 0 auto" >
                         <div style="background-color: transparent">
-                          <img class="img-responsive" src="images/blobby.jpg">
+                          <img src="images/blobby.jpg" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                         <div style="background-color: transparent">
-                          <img class="img-responsive" src="images/Business card holder.jpg" >
+                          <img src="images/Business card holder.jpg" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                         <div style="background-color: transparent" >
-                          <img class="img-responsive" src="images/Dekorimi.jpg" >
+                          <img src="images/Dekorimi.jpg" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                         <div style="background-color: transparent" >
-                          <img class="img-responsive" src="images/Detaje.jpg" >
+                          <img src="images/Detaje.jpg" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                         <div style="background-color: transparent" >
-                          <img class="img-responsive" src="images/Dinosauri levizes.jpg" >
+                          <img src="images/Dinosauri levizes.jpg" style="width:50%;height:50%;margin: 0 auto">
                         </div>
 						
 						<div style="background-color: transparent">
-                          <img  class="img-responsive"src="images/Glow in the dark.jpg" >
+                          <img src="images/Glow in the dark.jpg" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                         <div style="background-color: transparent">
-                          <img  class="img-responsive" src="images/Oktapodi levizes.jpg" >
+                          <img src="images/Oktapodi levizes.jpg" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                         <div style="background-color: transparent" >
-                          <img  class="img-responsive" src="images/Phone holder elephant.jpg" >
+                          <img src="images/Phone holder elephant.jpg" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                         <div style="background-color: transparent" >
-                          <img class="img-responsive" src="images/Skeletoni levizes.jpg" >
+                          <img src="images/Skeletoni levizes.jpg" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                         <div style="background-color: transparent" >
-                          <img class="img-responsive" src="images/Vazoja.jpg" >
+                          <img src="images/Vazoja.jpg" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                         <div style="background-color: transparent" >
-                          <img  class="img-responsive" src="images/Zhapulini.jpg" >
+                          <img src="images/Zhapulini.jpg" style="width:50%;height:50%;margin: 0 auto">
                         </div>
                     </section>
                 </div>
@@ -1259,11 +1259,9 @@ $(document).ready(function(){
   <script type="text/javascript">
     $(document).on('ready', function() {
       $(".single-item").slick({
-        dots: false,
+        dots: true,
         infinite: true,
         centerMode: true,
-        fade: true,
-  cssEase: 'linear'
         
       });
     });
