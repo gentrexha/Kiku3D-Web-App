@@ -2,42 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61f340dd-622d-4c02-bd90-4af516551c06" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/README.md" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/111.png" afterPath="$PROJECT_DIR$/www/images/111.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/1115x5.png" afterPath="$PROJECT_DIR$/www/images/1115x5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/222.png" afterPath="$PROJECT_DIR$/www/images/222.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/22752655_10215033817667687_507226245_n.jpg" afterPath="$PROJECT_DIR$/www/images/22752655_10215033817667687_507226245_n.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/333.png" afterPath="$PROJECT_DIR$/www/images/333.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/3dlodraCOVER.jpg" afterPath="$PROJECT_DIR$/www/images/3dlodraCOVER.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/3dlodraPROFIL.jpg" afterPath="$PROJECT_DIR$/www/images/3dlodraPROFIL.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/444.png" afterPath="$PROJECT_DIR$/www/images/444.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/4445x5.png" afterPath="$PROJECT_DIR$/www/images/4445x5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/555.png" afterPath="$PROJECT_DIR$/www/images/555.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/5555x5.png" afterPath="$PROJECT_DIR$/www/images/5555x5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/666.png" afterPath="$PROJECT_DIR$/www/images/666.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/777.png" afterPath="$PROJECT_DIR$/www/images/777.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/7775x5.png" afterPath="$PROJECT_DIR$/www/images/7775x5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/888.png" afterPath="$PROJECT_DIR$/www/images/888.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/BackgroundTest1.jpg" afterPath="$PROJECT_DIR$/www/images/BackgroundTest1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/Foto_1.jpg" afterPath="$PROJECT_DIR$/www/images/Foto_1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/Foto_2.jpg" afterPath="$PROJECT_DIR$/www/images/Foto_2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/Gjysem te gatshme.mp4" afterPath="$PROJECT_DIR$/www/videos/Gjysem te gatshme.mp4" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/Kiku-Bejevet.mp4" afterPath="$PROJECT_DIR$/www/videos/Kiku-Bejevet.mp4" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/alieni.png" afterPath="$PROJECT_DIR$/www/images/alieni.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/facebook32x32.png" afterPath="$PROJECT_DIR$/www/images/facebook32x32.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/facebook64x64.png" afterPath="$PROJECT_DIR$/www/images/facebook64x64.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/foto1.jpg" afterPath="$PROJECT_DIR$/www/images/foto1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/foto2.jpg" afterPath="$PROJECT_DIR$/www/images/foto2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/foto3.jpg" afterPath="$PROJECT_DIR$/www/images/foto3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/instagram32x32.png" afterPath="$PROJECT_DIR$/www/images/instagram32x32.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/instagram64x64.png" afterPath="$PROJECT_DIR$/www/images/instagram64x64.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/opera.png" afterPath="$PROJECT_DIR$/www/images/opera.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/paint.jpg" afterPath="$PROJECT_DIR$/www/images/paint.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.php" afterPath="$PROJECT_DIR$/www/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index2.php" afterPath="$PROJECT_DIR$/www/index2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/indextest.html" afterPath="$PROJECT_DIR$/www/indextest.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/.github/ISSUE_TEMPLATE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/.github/PULL_REQUEST_TEMPLATE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/.php_cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/OAuth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/PHPMailer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/PHPMailerAutoload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/POP3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/SMTP.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/UPGRADING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/VERSION" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/class.phpmailer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/class.smtp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/get_oauth_token.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-am.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-ar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-az.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-ba.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-be.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-bg.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-ca.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-ch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-cs.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-da.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-de.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-el.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-eo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-es.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-et.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-fa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-fi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-fo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-fr.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-gl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-he.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-hr.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-hu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-id.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-it.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-ja.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-ka.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-ko.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-lt.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-lv.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-ms.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-nb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-nl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-pl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-pt.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-pt_br.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-ro.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-rs.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-ru.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-sk.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-sl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-sv.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-tr.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-uk.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-vi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-zh.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/language/phpmailer.lang-zh_cn.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/phpdoc.dist.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/src/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/src/OAuth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/src/PHPMailer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/src/POP3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/PHPMailer/src/SMTP.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/class.smtp.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/www/index.php" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,12 +84,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/index.php">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="50" />
-              <folding />
+            <state relative-caret-position="938">
+              <caret line="68" column="99" lean-forward="false" selection-start-line="68" selection-start-column="99" selection-end-line="68" selection-end-column="99" />
+              <folding>
+                <marker date="1517755456966" expanded="false" signature="31240:31254" ph="..." />
+                <marker date="1517755456966" expanded="false" signature="31382:31410" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="one-page-wonder.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/css/one-page-wonder.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="8" />
+              <folding>
+                <marker date="1509563292000" expanded="true" signature="2380:2416" ph="{...}" />
+                <marker date="1509563292000" expanded="true" signature="2582:2620" ph="{...}" />
+                <marker date="1509563292000" expanded="true" signature="5192:5295" ph="{...}" />
+                <marker date="1509563292000" expanded="true" signature="5699:5850" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,6 +117,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>3dLodra</find>
+      <find>video</find>
+      <find>iframe</find>
+      <find>font</find>
+      <find>icon</find>
+      <find>myFunction()</find>
+      <find>submit</find>
+      <find>myFunction</find>
+      <find>message</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -77,6 +139,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/www/index.php" />
+        <option value="$PROJECT_DIR$/www/index.html" />
       </list>
     </option>
   </component>
@@ -90,11 +153,10 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1509" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1771" />
-    <option name="height" value="973" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -134,10 +196,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,10 +210,18 @@
               <item name="Kiku3D-Web-App" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Kiku3D-Web-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kiku3D-Web-App" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,16 +345,19 @@
       <option name="presentableId" value="Default" />
       <updated>1509004189480</updated>
       <workItem from="1509004191421" duration="497000" />
-      <workItem from="1509004816232" duration="1271000" />
+      <workItem from="1509004816232" duration="2517000" />
+      <workItem from="1509027461362" duration="6315000" />
+      <workItem from="1509527630503" duration="516000" />
+      <workItem from="1509628155617" duration="372000" />
+      <workItem from="1517321089448" duration="5584000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1768000" />
+    <option name="totallyTimeSpent" value="15801000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1509" y="23" width="1771" height="973" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="791" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -300,7 +371,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24957651" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -328,11 +399,86 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/class.smtp.php">
+    <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1517755456966" expanded="false" signature="31240:31254" ph="..." />
+            <marker date="1517755456966" expanded="false" signature="31382:31410" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/one-page-wonder.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <marker date="1509563292000" expanded="true" signature="2380:2416" ph="{...}" />
+            <marker date="1509563292000" expanded="true" signature="2582:2620" ph="{...}" />
+            <marker date="1509563292000" expanded="true" signature="5192:5295" ph="{...}" />
+            <marker date="1509563292000" expanded="true" signature="5699:5850" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1517755456966" expanded="false" signature="31240:31254" ph="..." />
+            <marker date="1517755456966" expanded="false" signature="31382:31410" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/one-page-wonder.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <marker date="1509563292000" expanded="true" signature="2380:2416" ph="{...}" />
+            <marker date="1509563292000" expanded="true" signature="2582:2620" ph="{...}" />
+            <marker date="1509563292000" expanded="true" signature="5192:5295" ph="{...}" />
+            <marker date="1509563292000" expanded="true" signature="5699:5850" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1517755456966" expanded="false" signature="31240:31254" ph="..." />
+            <marker date="1517755456966" expanded="false" signature="31382:31410" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/one-page-wonder.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <marker date="1509563292000" expanded="true" signature="2380:2416" ph="{...}" />
+            <marker date="1509563292000" expanded="true" signature="2582:2620" ph="{...}" />
+            <marker date="1509563292000" expanded="true" signature="5192:5295" ph="{...}" />
+            <marker date="1509563292000" expanded="true" signature="5699:5850" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1517755456966" expanded="false" signature="31240:31254" ph="..." />
+            <marker date="1517755456966" expanded="false" signature="31382:31410" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -344,7 +490,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/LICENSE">
+    <entry file="file://$PROJECT_DIR$/www/LICENSE" />
+    <entry file="file://$PROJECT_DIR$/www/indextest.html" />
+    <entry file="file://$PROJECT_DIR$/www/test.html" />
+    <entry file="file://$PROJECT_DIR$/www/index.html" />
+    <entry file="file://$PROJECT_DIR$/www/class.smtp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -352,11 +502,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.php">
+    <entry file="file://$PROJECT_DIR$/www/css/one-page-wonder.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="50" />
-          <folding />
+        <state relative-caret-position="390">
+          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <marker date="1509563292000" expanded="true" signature="2380:2416" ph="{...}" />
+            <marker date="1509563292000" expanded="true" signature="2582:2620" ph="{...}" />
+            <marker date="1509563292000" expanded="true" signature="5192:5295" ph="{...}" />
+            <marker date="1509563292000" expanded="true" signature="5699:5850" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="938">
+          <caret line="68" column="99" lean-forward="false" selection-start-line="68" selection-start-column="99" selection-end-line="68" selection-end-column="99" />
+          <folding>
+            <marker date="1517755456966" expanded="false" signature="31240:31254" ph="..." />
+            <marker date="1517755456966" expanded="false" signature="31382:31410" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
